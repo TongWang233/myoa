@@ -1,0 +1,109 @@
+BODY {
+	FONT-SIZE: 12px
+}
+.txt {
+	FONT-SIZE: 12px; COLOR: #000057; LINE-HEIGHT: 18px; FONT-FAMILY: "新宋体"; TEXT-DECORATION: none
+}
+.list_border {
+	BORDER-RIGHT: black 0px solid; BORDER-TOP: black 0px solid; FONT-SIZE: 12px; BORDER-LEFT: #000000 0px solid; COLOR: #000000; LINE-HEIGHT: 16px; BORDER-BOTTOM: black 0px solid; FONT-FAMILY: "新宋体"; BACKGROUND-COLOR: #d6e3f1; TEXT-DECORATION: none
+}
+.table_background {
+	BORDER-RIGHT: #b7babc 1px solid; BORDER-TOP: black 0px solid; FONT-SIZE: 12px; BORDER-LEFT: black 0px solid; COLOR: #003333; LINE-HEIGHT: 18px; BORDER-BOTTOM: black 0px solid; FONT-FAMILY: "新宋体"; BACKGROUND-COLOR: #f5fcff; TEXT-DECORATION: none
+}
+.table_background_right {
+	BORDER-RIGHT: #b7babc 1px solid; BORDER-TOP: black 0px solid; FONT-SIZE: 12px; BORDER-LEFT: #b7babc 1px solid; COLOR: #000033; LINE-HEIGHT: 18px; BORDER-BOTTOM: black 0px solid; FONT-FAMILY: "新宋体"; BACKGROUND-COLOR: #f5fcff; TEXT-DECORATION: none
+}
+.TitleList {
+	FONT-SIZE: 12px; COLOR: #000057; FONT-FAMILY: "新宋体"; TEXT-DECORATION: none
+}
+.form_n {
+	BORDER-RIGHT: #336699 1px solid; BORDER-TOP: #316395 1px solid; FONT-SIZE: 12px; BORDER-LEFT: #336699 1px solid; COLOR: #000000; LINE-HEIGHT: 18px; BORDER-BOTTOM: #336699 1px solid; FONT-FAMILY: "新宋体"; HEIGHT: 18px; BACKGROUND-COLOR: #f7f7f7; TEXT-DECORATION: none
+}
+.form_r {
+	BORDER-RIGHT: #336699 1px solid; BORDER-TOP: #316395 1px solid; FONT-SIZE: 12px; BORDER-LEFT: #336699 1px solid; COLOR: #000000; LINE-HEIGHT: 18px; BORDER-BOTTOM: #336699 1px solid; FONT-FAMILY: "新宋体"; HEIGHT: 18px; BACKGROUND-COLOR: #ffffff; TEXT-DECORATION: none
+}
+
+.button {
+	BORDER-RIGHT: #000000 1px solid; BORDER-TOP: #cccccc 1px solid; FONT-SIZE: 12px; BORDER-LEFT: #cccccc 1px solid; BORDER-BOTTOM: #000000 1px solid; HEIGHT: 18px
+}
+.dropshadow {
+	FILTER: DropShadow(Color=black, OffX=1, OffY=1, Positive=1)
+}
+.size14 {
+	FONT-SIZE: 14px
+}
+TEXTAREA {
+	BORDER-RIGHT: #cccccc 1px solid; BORDER-TOP: #000000 1px solid; FONT-SIZE: 12px; BORDER-LEFT: #000000 1px solid; BORDER-BOTTOM: #cccccc 1px solid
+}
+.xuxian {
+	BORDER-RIGHT: 0px; BORDER-TOP: #000000 0px dotted; BORDER-LEFT: 0px; BORDER-BOTTOM: 0px
+}
+.xuxian2 {
+	BORDER-TOP-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-LEFT: #000000 1px dotted; BORDER-RIGHT-WIDTH: 0px
+}
+.xuxian3 {
+	BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM: #000000 1px dotted; BORDER-RIGHT-WIDTH: 0px
+}
+
+.xuxian4 {
+    border-style: dotted; border-width: 1; padding-left: 4; padding-right: 4; padding-top: 1; padding-bottom: 1
+}
+
+.xuxian5{
+    border-left-style: solid; border-left-width: 1; border-right-width: 1; border-top-width: 1; border-bottom-width: 1
+}
+
+.formhead {
+bgcolor="#CCFFCC"; border-style:solid; border-width:1; font-weight: bold; padding-left:4; padding-right:4; padding-top:1; padding-bottom:1; align="center"
+}
+
+.input {
+	BORDER-RIGHT: #cccccc 1px solid; BORDER-TOP: #000000 1px solid; FONT-SIZE: 12px; BORDER-LEFT: #000000 1px solid; BORDER-BOTTOM: #cccccc 1px solid; HEIGHT: 18px
+}
+.input1 {
+	BORDER-RIGHT: #cccccc 1px solid; BORDER-TOP: #000000 1px solid; FONT-SIZE: 16px; BORDER-LEFT: #000000 1px solid; BORDER-BOTTOM: #cccccc 1px solid; HEIGHT: 20px
+}
+
+.TdBorderRB {
+	BORDER-RIGHT: #cccccc 1px solid; BORDER-TOP: 0px solid; BORDER-LEFT: 0px solid; BORDER-BOTTOM: #333333 1px solid
+}
+.TdBorderB {
+	BORDER-RIGHT: 0px solid; BORDER-TOP: 0px solid; BORDER-LEFT: 0px solid; BORDER-BOTTOM: #333333 1px solid
+}
+.input2 {
+	BORDER-RIGHT: #000000 1px solid; BORDER-TOP: #000000 1px solid; BORDER-LEFT: #000000 1px solid; BORDER-BOTTOM: #000000 1px solid; HEIGHT: 18px
+}
+.expanded {
+	
+}
+.collapsed {
+	DISPLAY: none
+}
+DIV {
+	FONT-SIZE: 12px
+}
+
+.t1{
+	FONT-WEIGHT: bold; COLOR: #ffffff; TEXT-DECORATION: none
+}
+A.t1:hover {
+	TEXT-DECORATION: underline
+}
+TD {
+	FONT-SIZE: 9pt; LINE-HEIGHT: 18px
+}
+.f14 {
+	FONT-SIZE: 14px
+}
+.c {
+	COLOR: #666666
+}
+.p2 {
+	FONT-FAMILY: "Arial"
+}
+P {
+	LINE-HEIGHT: 120%
+}
+.formfont {
+	FONT-SIZE: 16px; FONT-FAMILY: "Verdana", "Arial", "Helvetica", "sans-serif"
+}

@@ -1,0 +1,165 @@
+<
+<link rel="stylesheet"
+	href="../styles/style.css" />
+<link rel="stylesheet"
+	href="../styles/calendar-win2k-cold-1.css"
+	rel="stylesheet" type="text/css" title="win2k-cold-1" />
+
+
+<META HTTP-EQUIV="Pragma" CONTENT="no-cache">
+<META HTTP-EQUIV="Cache-Control" CONTENT="no-cache">
+<META HTTP-EQUIV="Expires" CONTENT="0">
+
+
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+	<head>
+		<base href="http://fty-pc:8080../">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>添加用户</title>
+	</head>
+
+	<body >
+		<div id="main_body">
+			<ul class="main_top">
+				<li class="main_top_left left">
+					添加用户
+				</li>
+			</ul>
+			<div class="main_content_rightbg">
+				<div class="main_content_leftbg">
+					<form name="form1" method="post" action="user_saveOrUpdate">
+						<input type="hidden" name="bz" value="save">
+						<input type="hidden" name="type" value="">
+						<input type="hidden" name="id" value="">
+						<table width="98%" border="0" align=center cellpadding="2"
+							cellspacing="1" bgcolor="#FFFFFF" class="border">
+							<tr>
+								<td width="20%" align="left" class="tdbg">
+									<strong>用户名</strong>
+								</td>
+								<td width="30%" align="left" class="tdbg">
+									<INPUT type="text" id="userName" name="user.userName"
+										value="">
+									&nbsp;
+									<strong class="red" style="font-size: 16px">*</strong>
+								</td>
+
+								<td width="20%" align="left" class="tdbg"><strong>密码</strong>
+								</td>
+								<td width="30%" align="left" class="tdbg">
+									<INPUT id="userPassword" name="user.userPassword"
+										value="">
+									<strong class="red" style="font-size: 16px">*</strong>
+								</td>
+							</tr>
+
+							<tr>
+								
+								<td width="20%" align="left" class="tdbg">
+									<strong>性别</strong>
+								</td>
+								<td width="40%" align="left" class="tdbg">
+									<select id="userSex" name="user.userSex">
+										<option value="男"
+											>
+											男
+										</option>
+										<option value="女" selected="selected">
+											女
+										</option>
+									</select>
+								</td>
+								<td width="20%" align="left" class="tdbg">
+									<strong>部门</strong>
+								</td>
+								<td width="20%" align="left" class="tdbg">
+
+									<select id="department" name="user.department.departmentId">
+										
+											<option value="1">
+												学习部
+											</option>
+										
+											<option value="2">
+												基础部
+											</option>
+										
+											<option value="3">
+												杂部
+											</option>
+										
+											
+										
+										
+									</select>
+									<strong class="red" style="font-size: 16px">*</strong>
+								</td>
+							</tr>
+
+							
+
+							<tr>
+								<td width="20%" align="left" class="tdbg">
+									<strong>创建时间</strong>
+								</td>
+								<td width="30%" align="left" nowrap class="tdbg">
+									<input type="text" name="createDate" size="27" value=""
+										id="begin_date_b">
+									<strong class="red" style="font-size: 16px">*</strong>
+								</td>
+
+									<td width="20%" align="left" class="tdbg">
+										<strong>角色</strong>
+									</td>
+									<td width="40%" align="left" class="tdbg">
+
+										<select id="role" name="user.role.id">
+											
+												<option value="1">
+													管理员
+												</option>
+											
+												<option value="2">
+													老板
+												</option>
+											
+												<option value="3">
+													员工
+												</option>
+											
+												<option value="4">
+													车辆审批调度员
+												</option>
+											
+										</select>
+										<strong class="red" style="font-size: 16px">*</strong>
+									</td>
+							</tr>
+
+							
+
+							
+							
+							
+							<tr>
+								<td colspan="4" align="center" class="tdbg">
+									<INPUT id="submit" type="submit" value="确定" name="submit">
+									&nbsp;&nbsp;
+									<INPUT id="button2" type="button" value="取消" name="Button2"
+										class="newButton" onClick="window.history.go(-1);">
+								</td>
+							</tr>
+						</table>
+					</form>
+				</div>
+			</div>
+			<ul class="main_end">
+				<li class="main_end_left left"></li>
+				<li class="main_end_right right"></li>
+			</ul>
+		</div>
+	</body>
+
+</html>

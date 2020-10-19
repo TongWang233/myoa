@@ -1,0 +1,272 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>外出登记查询</title>
+		<link rel="stylesheet" href="../styles/style.css" type="text/css" />
+		<script type="text/javascript" src="/manager/scripting/public.js"></script>
+	<link href="../styles/calendar-win2k-cold-1.css" rel="stylesheet" type="text/css" title="win2k-cold-1"/>
+    <script type="text/javascript" src="../js/public.js"></script>
+    <script type="text/javascript" src="../js/calendar.js"></script>
+	<script type="text/javascript" src="../js/calendar-zh.js"></script>
+	<script type="text/javascript" src="../js/calendar-setup.js"></script></head>
+		<script type="text/javascript">
+        function frmSub(frm, objectname)
+        {
+            var value = $GetFromAllElement(frm, objectname);
+            if (value.length == 0)
+            {
+                //alert("testing....");
+                alert("请选择记录再操作！");
+                return false;
+            }
+             return $MC('你确定删除吗?');
+            return true;
+        }
+    </script>
+	</head>
+	<body>
+		<div id="main_body">
+			<!-- ----------用户结构start -------------------------->
+			<ul class="main_top">
+				<li class="main_top_left left">
+					上下班记录查询
+					<BR>
+				</li>
+				<li class="main_top_right right"></li>
+			</ul>
+			<form name="form2" method="post"
+				action="../work_workList">
+				<div class="main_content_rightbg">
+					<div class="main_content_leftbg">
+						<table width="80%" border="0" align=center cellpadding="2"
+							cellspacing="1" bgcolor="#FFFFFF" class="border">
+						<tr>
+								<td width="10%" align="right" nowrap class="tdbg">
+									<strong>起始日期：</strong>
+								</td>
+								<td width="20%" align="left" nowrap class="tdbg">
+									<input type="text" name="work.gtime"  readonly="readonly" id="g"><input type="reset" value="..."
+onclick="return showCalendar('g', 'y-m-d');">&nbsp;
+								</td>
+								
+								<td width="30%" align="right" nowrap class="tdbg">
+									<strong >截止日期</strong>
+								
+							<input type="text" name="work.otime" readonly="readonly" id="o"><input type="reset" value="..."
+onclick="return showCalendar('o', 'y-m-d');">
+								</td>							
+								<td width="30%" align="right" nowrap class="tdbg">
+									<input type="submit" value="查  询">
+								</td>
+								
+							</tr>
+						</table>
+					</div>
+				</div>
+				</form>
+				<ul class="main_end">
+					<li class="main_end_left left"></li>
+					<li class="main_end_right right"></li>
+				</ul>
+				<!-- ----------用户结构end -------------------------->
+
+
+				<!--******************************************** -->
+				<ul class="main_top">
+					<li class="main_top_left left">
+						上下班登记列表
+						<BR>
+					</li>
+					<li class="main_top_right right"></li>
+				</ul>
+				<div class="main_content_rightbg">
+					<div class="main_content_leftbg">
+				<form name="form1" method="post"
+                  action="../work_deleteAll">
+					<table width="80%" border="0" align=center cellpadding="2"
+							cellspacing="1" bgcolor="#FFFFFF" class="border">
+							<tr>
+								<td width="5%" align="center" nowrap class="tdbg">
+									<strong>选择</strong>
+								</td>
+								<td width="10%" align="center" class="tdbg">
+									<strong>员工ID </strong>
+								</td>
+								<td width="10%" align="center" class="tdbg">
+									<strong>员工 </strong>
+								</td>
+								<td width="20%" align="center" class="tdbg">
+									<strong>上班登记时间 </strong>
+								</td>
+								<td width="20%" align="left" class="tdbg">
+									<div align="center">
+										<strong>下班登记时间</strong>
+									</div>
+								</td>
+								
+								<td width="13%" align="center" nowrap class="tdbg">
+									<strong>操作</strong>
+								</td>
+
+							</tr>
+
+
+								<tr>
+									<td align="center" class="tdbg">
+										<input type="checkbox" name="ids"
+											value="1">
+									</td>
+											<td align="center" class="tdbg">
+										29
+
+									</td>
+									<td align="center" class="tdbg">
+										1
+
+									</td>
+									<td align="center" class="tdbg">
+										2012-1-16 16:00:00
+
+									</td>
+									<td align="center" class="tdbg">
+										2012-1-16 23:00:00
+									</td>
+									
+									
+									 <td align="center" class="tdbg">
+                                    <A
+                                    href="../work.do?operate=getById&id=">修改</A>
+
+                                    <a href="../work_deleteWageFlow?id=1" onClick="return $MC('你确定删除吗?');">删除</a>
+                            </td>
+								</tr>
+							
+
+								<tr>
+									<td align="center" class="tdbg">
+										<input type="checkbox" name="ids"
+											value="9">
+									</td>
+											<td align="center" class="tdbg">
+										23
+
+									</td>
+									<td align="center" class="tdbg">
+										&#21016;&#22825;&#40857;
+
+									</td>
+									<td align="center" class="tdbg">
+										2012-01-12 05:00:00
+
+									</td>
+									<td align="center" class="tdbg">
+										2012-1-12 20:00:00
+									</td>
+									
+									
+									 <td align="center" class="tdbg">
+                                    <A
+                                    href="../work.do?operate=getById&id=">修改</A>
+
+                                    <a href="../work_deleteWageFlow?id=9" onClick="return $MC('你确定删除吗?');">删除</a>
+                            </td>
+								</tr>
+							
+
+								<tr>
+									<td align="center" class="tdbg">
+										<input type="checkbox" name="ids"
+											value="15">
+									</td>
+											<td align="center" class="tdbg">
+										16
+
+									</td>
+									<td align="center" class="tdbg">
+										&#23567;&#20843;
+
+									</td>
+									<td align="center" class="tdbg">
+										2012-01-12
+
+									</td>
+									<td align="center" class="tdbg">
+										2012-1-12
+									</td>
+									
+									
+									 <td align="center" class="tdbg">
+                                    <A
+                                    href="../work.do?operate=getById&id=">修改</A>
+
+                                    <a href="../work_deleteWageFlow?id=15" onClick="return $MC('你确定删除吗?');">删除</a>
+                            </td>
+								</tr>
+							
+
+								<tr>
+									<td align="center" class="tdbg">
+										<input type="checkbox" name="ids"
+											value="16">
+									</td>
+											<td align="center" class="tdbg">
+										23
+
+									</td>
+									<td align="center" class="tdbg">
+										&#21016;&#22825;&#40857;
+
+									</td>
+									<td align="center" class="tdbg">
+										2012-1-20 00:00:00
+
+									</td>
+									<td align="center" class="tdbg">
+										2012-1-20 00:00:00
+									</td>
+									
+									
+									 <td align="center" class="tdbg">
+                                    <A
+                                    href="../work.do?operate=getById&id=">修改</A>
+
+                                    <a href="../work_deleteWageFlow?id=16" onClick="return $MC('你确定删除吗?');">删除</a>
+                            </td>
+								</tr>
+							
+						</table>
+						<table width="80%" border="0" align=center cellpadding="0"
+							cellspacing="0" bgcolor="#FFFFFF">
+							<tr>
+								<td width="10%" align="left" class="tdbg">
+									<INPUT id="chkAll" type="checkbox" value="checkbox"
+										name="chkAll" onclick="$CHKBoxALL(document.form1, this, '');">
+									全选
+								</td>
+								<td width="90%" align="left" class="tdbg">
+									<STRONG>操作：</STRONG>
+									<mysteel:popedom con="" functionID="83">&nbsp; 
+									          
+										<INPUT type="submit" value="删除选定" name="Submit"
+											onclick="return frmSub(document.form1, 'ids')">
+									</mysteel:popedom>
+								</td>
+							</tr>
+						</table>
+			</form>
+			<table width="80%" border="0" align=center cellpadding="2"
+				cellspacing="0" bgcolor="#FFFFFF" class="border">
+				<tr>
+					<!-- <td height="40" align="center" class="tdbg"></td>-->
+				</tr>
+			</table>
+		</div>
+		</div>
+		<ul class="main_end">
+			<li class="main_end_left left"></li>
+			<li>共有4条记录,每页10条记录&nbsp;&nbsp;<b>[1]</b></li>
+			<li class="main_end_right right"></li>
+		</ul>
+		</div>
+	</body>
+</html>

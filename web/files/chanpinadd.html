@@ -1,0 +1,71 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>修改用户</title>
+    <link rel="stylesheet" href="../styles/style.css" type="text/css"/>
+    <link href="../styles/calendar-win2k-cold-1.css" rel="stylesheet" type="text/css" title="win2k-cold-1"/>
+    
+</head>
+<body>
+<div id="main_body">
+    <!-- **************************************************************-->
+    <ul class="main_top">
+        <li class="main_top_left left">修改产品信息<br></li>
+        <li class="main_top_right right">&gt;</li>
+    </ul>
+    <form name="form1" method="post"
+				action="upload_add" enctype="multipart/form-data">
+				<div class="main_content_rightbg">
+					<div class="main_content_leftbg">
+						<table width="80%" border="0" align=center cellpadding="2">
+							<tr>
+								<td>
+								<input type="hidden" value="" name="product.productId">
+								产品名称：<input type="text" class="tdbg" name="product.productName" value=""></td>
+								<td>  
+									供应商：&nbsp;
+									<select class="tdbg" name="product.provide.provideId">
+									
+                                     <option selected value="1">诺基亚</option>
+                                         
+                                     <option selected value="2">meixu</option>
+                                         
+                                         </select>
+								</td>
+
+							</tr>
+							<tr>
+
+								<td> 
+									编&nbsp; &nbsp;&nbsp; 号： 
+									<input type="text" class="tdbg" name="product.productNo" value="">
+								</td>
+								<td>  
+									产品类别：<select class="tdbg" name="product.dictionary.dictionaryName">
+									
+                              <option selected value="pro_dnhc">电脑耗材</option>
+                              
+                              <option selected value="pro_dzcq">电子产品</option>
+                              
+                              <option selected value="pro_sjcq">手机产品</option>
+                              
+                               </select></td>
+							</tr>
+
+							<tr>
+								<td> 
+									产品型号：<input type="text" class="tdbg" name="product.productModel" ></td>
+								
+								<td>  
+							出售价：<input type="text" class="tdbg" name="product.sellPrice" /></td>
+							</tr>
+							<tr><td>成 本 价：<input type="text" class="tdbg" name="product.costPrice" ></td><td><input type="submit" value="提   交"></td></tr>
+							
+						</table>
+					</div>
+				</div>
+			</form>
+  </div>
+  
+</body>
+</html>

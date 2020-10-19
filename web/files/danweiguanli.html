@@ -1,0 +1,216 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+	<head>
+		<meta http-equiv="pragma" content="no-cache">
+		<meta http-equiv="cache-control" content="no-cache">
+		<meta http-equiv="expires" content="0">
+		<meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
+		<meta http-equiv="description" content="This is my page">
+		<title>单位列表</title>
+		<link rel="stylesheet"
+			href="../styles/style.css" type="text/css" />
+		
+
+		
+		<!--
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	-->
+
+	</head>
+
+	<body>
+		<div id="main_body">
+			<!-- ----------用户结构start -------------------------->
+			<ul class="main_top">
+				<li class="main_top_left left">
+					单位查询
+					<BR>
+				</li>
+				<li class="main_top_right right"></li>
+			</ul>
+			<form name="form2" method="post"
+				action="../company_getAll">
+				<div class="main_content_rightbg">
+					<div class="main_content_leftbg">
+						<table width="80%" border="0" align=center cellpadding="2"
+							cellspacing="1" bgcolor="#FFFFFF" class="border">
+							<tr>
+								<td width="10%" align="right" nowrap class="tdbg">
+									<strong>单位名称：</strong>
+								</td>
+								<td colspan="3" width="30%" align="left" nowrap class="tdbg">
+									<input type="text" name="comname">
+								</td>
+								<td width="20%" align="left" nowrap class="tdbg">
+
+								</td>
+							</tr>
+							<tr>
+								<td width="10%" align="right" nowrap class="tdbg">
+
+								</td>
+								<td width="30%" align="left" nowrap class="tdbg">
+
+								</td>
+								<td width="10%" align="right" nowrap class="tdbg">
+
+								</td>
+								<td width="30%" align="left" nowrap class="tdbg">
+								</td>
+								<td width="20%" align="center" nowrap class="tdbg">
+									<input type="submit" value="查  询" class="newButton">
+								</td>
+
+							</tr>
+						</table>
+					</div>
+				</div>
+			</form>
+			<ul class="main_end">
+				<li class="main_end_left left"></li>
+				<li class="main_end_right right"></li>
+			</ul>
+
+
+			<!--******************************************** -->
+			<ul class="main_top">
+				<li class="main_top_left left">
+					单位列表
+					<BR>
+				</li>
+				<li class="main_top_right right"></li>
+			</ul>
+			<div class="main_content_rightbg">
+				<div class="main_content_leftbg">
+					<form name="form1" method="post"
+						action="../company_deleteAll">
+						<table width="80%" border="0" align=center cellpadding="2"
+							cellspacing="1" bgcolor="#FFFFFF" class="border">
+							<tr>
+								<td width="5%" align="center" nowrap class="tdbg">
+									<strong>选择</strong>
+								</td>
+								<td align="center" class="tdbg">
+									<strong>公司名称</strong>
+								</td>
+								<td align="center" class="tdbg">
+									<div align="center">
+										<strong>公司电话</strong>
+									</div>
+								</td>
+								<td align="center" class="tdbg">
+									<div align="center">
+										<strong>公司传真</strong>
+									</div>
+								</td>
+								<td align="center" class="tdbg">
+									<div align="center">
+										<strong>邮编</strong>
+									</div>
+								</td>
+								<td align="center" class="tdbg">
+									<div align="center">
+										<strong>网站</strong>
+									</div>
+								</td>
+								<td align="center" class="tdbg">
+									<div align="center">
+										<strong>开户行</strong>
+									</div>
+								</td>
+								<td align="center" class="tdbg">
+									<div align="center">
+										<strong>开户行号</strong>
+									</div>
+								</td>
+								<td width="15%" align="center" nowrap class="tdbg">
+									<strong>操作</strong>
+								</td>
+
+							</tr>
+							
+	<tr>
+									<td align="center" class="tdbg">
+										<input type="checkbox" name="userId"
+											value="25">
+									</td>
+									<td align="left" class="tdbg">
+										东软睿道
+									</td>
+									<td align="left" class="tdbg">
+										0451-88888888
+									</td>
+									<td align="center" class="tdbg">
+										0451-99999999
+									</td>
+
+
+									<td width="5%" align="center" class="tdbg">
+										150000
+									</td>
+									<td align="center" class="tdbg">
+										http://www.xx.com
+									</td>
+									<td align="center" class="tdbg">
+										建设银行
+									</td>
+									<td align="center" class="tdbg">
+										1234567890
+									</td>
+									<td align="center" class="tdbg">
+										<A href="user_update?id=25">修改</A> &nbsp;&nbsp;&nbsp;
+										<a href="user_delete?id=25">删除</a>
+						
+									</td>
+							
+
+							</tr>
+
+
+
+						</table>
+						<table width="80%" border="0" align=center cellpadding="0"
+							cellspacing="0" bgcolor="#FFFFFF">
+							<tr>
+								<td width="10%" align="left" class="tdbg">
+									<INPUT id="chkAll" type="checkbox" value="checkbox"
+										name="chkAll">
+									全选
+								</td>
+								<td width="70%" align="left" class="tdbg">
+									<STRONG>操作：</STRONG>
+									<INPUT type="submit" value="删除选定" name="Submit"
+										class="newButton" >
+									&nbsp;&nbsp;&nbsp;&nbsp;
+									<INPUT type="button" value="添&nbsp;&nbsp;&nbsp;&nbsp;加"
+										name="addButton"
+										onclick="javascript:window.location.href='danweiadd.html'"
+										class="newButton">
+									
+									&nbsp;&nbsp;
+									
+								</td>
+
+							</tr>
+						</table>
+					</form>
+					<table width="80%" border="0" align=center cellpadding="2"
+						cellspacing="0" bgcolor="#FFFFFF" class="border">
+						<tr>
+							<td height="40" align="center" class="tdbg">
+								共有0条记录,每页10条记录&nbsp;&nbsp;
+							</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+			<ul class="main_end">
+				<li class="main_end_left left"></li>
+				<li class="main_end_right right">
+					&quot;
+				</li>
+			</ul>
+		</div>
+		<br>
+	</body>
+</html>

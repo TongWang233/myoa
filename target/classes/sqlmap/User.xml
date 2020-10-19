@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.wwy.mapper.UserMapper">
+    <resultMap type="User" id="UserMap">
+        <!-- id标签一般配置主键列 ，column对应数据库表的列，property对应类的属性-->
+        <result  column="id"  property="id"/>
+        <result column="user_name" property="user_name" />
+        <result column="user_sex" property="user_sex"/>
+        <result column="user_password" property="user_password"/>
+        <result column="user_department" property="user_department"/>
+        <result column="user_role" property="user_role"/>
+        <result column="create_date" property="create_date"/>
+    </resultMap>
+
+    <select id="findUserById" parameterType="int" resultMap="UserMap">
+        SELECT * FROM T_USER
+    </select>
+</mapper>

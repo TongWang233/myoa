@@ -1,0 +1,142 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>OA管理系统</title>
+		<link rel="stylesheet"
+			href="../styles/style.css" type="text/css" />
+		
+	</head>
+	<body>
+		<div id="main_body">
+			<!-- ----------用户结构start -------------------------->
+			
+			
+			<br>
+			<br>
+			<!-- ----------用户结构end -------------------------->
+
+
+			<!--******************************************** -->
+			<ul class="main_top">
+				<li class="main_top_left left">
+					用户列表
+					<BR>
+				</li>
+
+			</ul>
+			<form name="form1" method="post" action="user_delAll"
+				onsubmit="return doSubmit();">
+				<div class="main_content_rightbg">
+					<div class="main_content_leftbg">
+						<table width="80%" border="0" align=center cellpadding="2"
+							cellspacing="1" bgcolor="#FFFFFF" class="border">
+							<tr>
+								<td  align="center" nowrap class="tdbg">
+									<strong>选择</strong>
+								</td>
+								<td  align="center" class="tdbg">
+									<strong>用户名称</strong>
+								</td>
+													
+								<td  align="left" class="tdbg">
+									<div align="center">
+										<strong>性别</strong>
+									</div>
+								</td>
+								<td  align="center" class="tdbg">
+									<strong>密码</strong>
+								</td>
+								<td w align="center" nowrap class="tdbg">
+									<strong>部门</strong>
+								</td>
+								
+								<td  align="center" class="tdbg">
+									<strong>角色</strong>
+								</td>
+
+								
+								<td  align="center" nowrap class="tdbg">
+									<strong>创建日期</strong>
+								</td>
+							
+
+								<td align="center" class="tdbg">
+									<STRONG>操作：</STRONG>
+								</td>
+							</tr>
+
+								<tr>
+									<td align="center" class="tdbg">
+										<input type="checkbox" name="userId"
+											value="25">
+									</td>
+									<td align="left" class="tdbg">
+										peng
+									</td>
+									<td align="left" class="tdbg">
+										男
+									</td>
+									<td align="center" class="tdbg">
+										1
+									</td>
+
+
+									<td width="5%" align="center" class="tdbg">
+										2
+									</td>
+									<td align="center" class="tdbg">
+										3
+									</td>
+									<td align="center" class="tdbg">
+										2011-11-11
+									</td>
+									
+									<td align="center" class="tdbg">
+										<A href="user_update?id=25">修改</A> &nbsp;&nbsp;&nbsp;
+										<a href="user_delete?id=25">删除</a>
+						
+									</td>
+							
+
+						</table>
+					</div>
+				</div>
+
+				<table width="80%" border="0" align=center cellpadding="0"
+					cellspacing="0" bgcolor="#FFFFFF">
+					<tr>
+						<td width="10%" align="left" class="tdbg">
+							<INPUT id="chkAll" type="checkbox" value="checkbox" name="chkAll"
+								>
+							全选
+						</td>
+						<td width="90%" align="center" class="tdbg">
+							<STRONG>操作：</STRONG>
+
+							<INPUT type="submit" value="删除选定" name="Submit"
+								
+								class="newButton">
+
+							<INPUT type="button" value="添加" name="Submit1" class="newButton"
+								onclick="javascript:location.href='yonghuadd.html'">
+						</td>
+					</tr>
+				</table>
+			</form>
+			<table width="80%" border="0" align=center cellpadding="2"
+				cellspacing="0" bgcolor="#FFFFFF" class="border">
+				<tr>
+					<td height="40" align="center" class="tdbg">
+						共有17条记录,每页10条记录&nbsp;&nbsp;<b>[1]</b><a href="?page=2">[2]</a><a title="下一页" href="?page=2">[>]</a>...<a title="最后一页" href="?page=2">[2]</a>
+					</td>
+				</tr>
+			</table>
+		</div>
+		
+		<ul class="main_end">
+			<li class="main_end_left left"></li>
+			<li class="main_end_right right"></li>
+		</ul>
+	</body>
+</html>

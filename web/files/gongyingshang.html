@@ -1,0 +1,293 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+        
+    <title>My JSP 'provideList.jsp' starting page</title>
+    
+	<meta http-equiv="pragma" content="no-cache">
+	<meta http-equiv="cache-control" content="no-cache">
+	<meta http-equiv="expires" content="0">    
+	<meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
+	<meta http-equiv="description" content="This is my page">
+	
+	<link rel="stylesheet" type="text/css" href="../styles/style.css">
+	<script type="text/javascript" src="../js/public.js"></script>
+
+     <script type="text/javascript">
+        function frmSub(frm, objectname)
+        {
+            var value = $GetFromAllElement(frm, objectname);
+            if (value.length == 0)
+            {
+                //alert("testing....");
+                alert("请选择记录再操作！");
+                return false;
+            }
+             return $MC('你确定删除吗?');
+            return true;
+        }
+    </script>
+  </head>
+  
+  <body>
+      <div id="main_body">
+	<!-- ----------用户结构start -------------------------->
+	<ul class="main_top">
+        <li class="main_top_left left">供应商查询<BR>
+        </li>
+        <li class="main_top_right right"></li>
+    </ul>
+    <form name="form2" method="post"
+                  action="/oademo/provide_findAll">
+    <div class="main_content_rightbg">
+        <div class="main_content_leftbg">
+        	<table width="80%" border="0" align=center cellpadding="2" cellspacing="1"
+                       bgcolor="#FFFFFF"
+                       class="border">
+                       <tr>
+                        	<td width="10%" align="right" nowrap class="tdbg">
+                        		<strong>供应商名称：</strong>
+                        	</td>
+                        	<td width="30%" align="left" nowrap class="tdbg">
+                        		<input type="text" name="provides.provideName" value="" id="provides_provideName"/>
+                        		
+                        	</td>
+                        	<td width="10%" align="right" nowrap class="tdbg">
+                        		<strong>供应商编码：</strong>
+                        	</td>
+                        	<td width="30%" align="left" nowrap class="tdbg">
+                        	    <input type="text" name="provides.provideNo" value="" id="provides_provideNo"/>
+                        	</td>
+                        	<td width="20%" align="center" nowrap class="tdbg">
+                        	</td>
+                        </tr>
+                        <tr>
+                        	<td width="10%" align="right" nowrap class="tdbg">
+                        		
+                        	</td>
+                        	<td width="30%" align="left" nowrap class="tdbg">
+                        		
+                        	</td>
+                        	<td width="10%" align="right" nowrap class="tdbg">
+                        		
+                        	</td>
+                        	<td width="30%" align="left" nowrap class="tdbg">
+                        		
+                        	</td>
+                        	
+                        	<td width="20%" align="center" nowrap class="tdbg">
+                        		<input type="submit" value="查  询" class="newButton">
+                        	</td>
+                        </tr>
+            </table>
+        </div>
+    </div>
+    </form>
+    <ul class="main_end">
+        <li class="main_end_left left"></li>
+        <li class="main_end_right right"></li>
+    </ul>
+    <!-- ----------用户结构end -------------------------->
+    
+    
+    <!--******************************************** -->
+    <ul class="main_top">
+        <li class="main_top_left left">供应商列表<BR>
+        </li>
+        <li class="main_top_right right"></li>
+    </ul>
+    <div class="main_content_rightbg">
+        <div class="main_content_leftbg">
+
+            <form name="form1" method="post"
+                  action="/oademo/provide_delfindAll">
+                  
+                <table width="80%" border="0" align=center cellpadding="2" cellspacing="1"
+                       bgcolor="#FFFFFF"
+                       class="border">
+                       
+                    <tr>
+                        <td width="5%" align="center" nowrap class="tdbg">
+                            <strong>选择</strong></td>
+                        <td align="center" class="tdbg"><strong>供应商名称</strong>
+                        </td>
+                        <td align="center" class="tdbg"><strong>供应商编码</strong>
+                        </td>
+                        <td align="center" class="tdbg">
+                            <div align="center"><strong>供应商简称</strong></div>
+                        </td>
+                        <td align="center" class="tdbg">
+                            <div align="center"><strong>电话</strong></div>
+                        </td>
+                        <td align="center" class="tdbg">
+                            <div align="center"><strong>传真</strong></div>
+                        </td>
+                        <td align="center" class="tdbg">
+                            <div align="center"><strong>网址</strong></div>
+                        </td>
+                        <td align="center" class="tdbg">
+                            <div align="center"><strong>电子邮件</strong></div>
+                        </td>
+                        <td align="center" class="tdbg">
+                            <div align="center"><strong>地区</strong></div>
+                        </td>
+                        <td align="center" class="tdbg">
+                            <div align="center"><strong>邮政编码</strong></div>
+                        </td>
+                        <td align="center" class="tdbg">
+                            <div align="center"><strong>详细地址</strong></div>
+                        </td>
+                        <td align="center" class="tdbg">
+                            <div align="center"><strong>备注</strong></div>
+                        </td>
+                        <td align="center" class="tdbg">
+                            <div align="center"><strong>开户行</strong></div>
+                        </td>
+                        <td align="center" class="tdbg">
+                            <div align="center"><strong>帐号</strong></div>
+                        </td>
+                        <td width="10%" align="center" nowrap class="tdbg">
+                            <strong>操作</strong></td>
+
+                    </tr>
+                    
+                        <tr>
+                            <td align="center" class="tdbg">
+                            <input type="checkbox" name="provide.provideId" value="1" id="provide_provideId"/>
+<input type="hidden" id="__checkbox_provide_provideId" name="__checkbox_provide.provideId" value="1" /> 
+                            </td>
+                            <td align="center" class="tdbg">
+						     &#35834;&#22522;&#20122;
+                          </td>
+                            <td align="center" class="tdbg">
+                              1111
+                           </td>
+                            <td align="center" class="tdbg">
+                              1111
+                            </td>
+                            <td align="center" class="tdbg">
+                              111
+                            </td>
+                            <td align="center" class="tdbg">
+                              111
+                            </td>
+                            <td align="center" class="tdbg">
+                              111
+                            </td>
+                            <td align="center" class="tdbg">
+                              1118@qq.com
+                            </td>
+                            <td align="center" class="tdbg">
+                              &#22825;&#27941;
+                            </td>
+                            <td align="center" class="tdbg">
+                              1111
+                            </td>
+                            <td align="center" class="tdbg">
+                              111
+                            </td>
+                            <td align="center" class="tdbg">
+                              
+                            </td>
+                            <td align="center" class="tdbg">
+                              
+                            </td>
+                            <td align="center" class="tdbg">
+                              
+                            </td>
+                            <td align="center" class="tdbg">
+                              <a href="/oademo/provide_deleteProvide?provides.provideId=1">删除</a>
+                              <a href="/oademo/provide_getSelectById?ID=1">修改</a>
+                            </td>
+                        </tr>
+                       
+                        <tr>
+                            <td align="center" class="tdbg">
+                            <input type="checkbox" name="provide.provideId" value="2" id="provide_provideId"/>
+<input type="hidden" id="__checkbox_provide_provideId" name="__checkbox_provide.provideId" value="2" /> 
+                            </td>
+                            <td align="center" class="tdbg">
+						     meixu
+                          </td>
+                            <td align="center" class="tdbg">
+                              1312
+                           </td>
+                            <td align="center" class="tdbg">
+                              n
+                            </td>
+                            <td align="center" class="tdbg">
+                              13763699696
+                            </td>
+                            <td align="center" class="tdbg">
+                              dada
+                            </td>
+                            <td align="center" class="tdbg">
+                              meizu
+                            </td>
+                            <td align="center" class="tdbg">
+                              431423@qq.com
+                            </td>
+                            <td align="center" class="tdbg">
+                              &#21513;&#26519;
+                            </td>
+                            <td align="center" class="tdbg">
+                              152000
+                            </td>
+                            <td align="center" class="tdbg">
+                              222
+                            </td>
+                            <td align="center" class="tdbg">
+                              
+                            </td>
+                            <td align="center" class="tdbg">
+                              
+                            </td>
+                            <td align="center" class="tdbg">
+                              
+                            </td>
+                            <td align="center" class="tdbg">
+                              <a href="/oademo/provide_deleteProvide?provides.provideId=2">删除</a>
+                              <a href="/oademo/provide_getSelectById?ID=2">修改</a>
+                            </td>
+                        </tr>
+                       
+
+
+                </table>
+                <table width="80%" border="0" align=center cellpadding="0" cellspacing="0"
+                       bgcolor="#FFFFFF">
+                    <tr>
+                        <td width="10%" align="left" class="tdbg"><INPUT id="chkAll"
+                                                                         type="checkbox"
+                                                                         value="checkbox"
+                                                                         name="chkAll"
+                                                                         onclick="$CHKBoxALL(document.form1, this, '');">
+                            全选
+                        </td>
+                        <td width="90%" align="left" class="tdbg"><STRONG>操作：</STRONG>
+                            <INPUT type="submit" value="删除选定" name="Submit" class="newButton" '">
+                        	&nbsp;&nbsp;&nbsp;&nbsp;<INPUT type="button" value="添&nbsp;&nbsp;&nbsp;&nbsp;加" name="addButton" onClick="javascript:window.location.href='gongyingshangadd.html'" class="newButton">
+                         </td>
+                        
+                    </tr>
+                     
+                </table>
+                 
+            </form>
+            
+            <table width="80%" border="0" align=center cellpadding="2" cellspacing="0"
+                   bgcolor="#FFFFFF" class="border">
+                <tr>
+                    <td height="40" align="center" class="tdbg"></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <ul class="main_end">
+        <li class="main_end_left left"></li>
+        <li class="main_end_right right"></li>
+    </ul>
+</div>
+ 共有2条记录,每页10条记录&nbsp;&nbsp;<b>[1]</b>
+  </body>
+</html>

@@ -1,0 +1,209 @@
+
+
+<META HTTP-EQUIV="Pragma" CONTENT="no-cache">
+<META HTTP-EQUIV="Cache-Control" CONTENT="no-cache">
+<META HTTP-EQUIV="Expires" CONTENT="0">
+
+
+
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+		<title>角色列表</title>
+		<link rel="stylesheet" href="../styles/style.css"
+			type="text/css" />
+
+		
+	</head>
+	<body>
+		<form name="form1" method="post" action="role_allRoleList">
+			<div id="main_body">
+				<ul class="main_top">
+					<li class="main_top_left left">
+						查询
+						<BR>
+					</li>
+					<li class="main_top_right right">
+					</li>
+				</ul>
+				<div class="main_content_rightbg">
+					<div class="main_content_leftbg">
+						<table width="80%" border="0" align=center cellpadding="2"
+							cellspacing="1" bgcolor="#FFFFFF" class="border">
+							<tr>
+								<td width="9%" align="center" class="tdbg">
+									<strong>角色编号</strong>
+								</td>
+								<td width="13%" align="left" class="tdbg">
+									<input type="text" name="role.roleNo" />
+								</td>
+								<td width="9%" align="center" class="tdbg">
+									<strong>角色名称</strong>
+								</td>
+								<td width="21%" align="left" class="tdbg">
+									<input name="role.roleName">
+								</td>
+								<td align="left" nowrap class="tdbg">
+									<input type="submit" name="Submit22" value=" 查 询  ">
+									<input type="button" onclick="location.href='jueseadd.html'" value=" 新 建  ">
+								</td>
+							</tr>
+						</table>
+
+					</div>
+				</div>
+
+				<ul class="main_end">
+					<li class="main_end_left left"></li>
+					<li class="main_end_right right"></li>
+				</ul>
+				<!--******************************************** -->
+				<ul class="main_top">
+					<li class="main_top_left left">
+						角色信息列表
+						<BR>
+					</li>
+					<li class="main_top_right right">
+					</li>
+				</ul>
+				<div class="main_content_rightbg">
+					<div class="main_content_leftbg">
+
+						<table width="80%" border="0" align=center cellpadding="2"
+							cellspacing="1" bgcolor="#FFFFFF" class="border">
+							<tr>
+								<td width="5%" align="center" nowrap class="tdbg">
+									<strong>选择</strong>
+								</td>
+								<td width="23%" align="center" class="tdbg">
+									<strong>角色编号</strong>
+								</td>
+								<td width="19%" align="center" class="tdbg">
+									<strong>角色名称</strong>
+								</td>
+
+								<td width="35%" align="center" nowrap class="tdbg">
+									<strong>操作</strong>
+								</td>
+							</tr>
+							
+								<tr>
+									<td align="left" class="tdbg">
+										<input type="checkbox" name="checkbox" value="1">
+									</td>
+									<td align="center" class="tdbg">
+										admin
+									</td>
+									<td align="center" class="tdbg">
+										管理员
+									</td>
+									<td align="center" class="tdbg">
+										<a href="role_deleteById?id=1">删除</a>
+										<a href="role_getRoleById?id=1">修改</a>
+										
+									</td>
+
+								</tr>
+							
+								<tr>
+									<td align="left" class="tdbg">
+										<input type="checkbox" name="checkbox" value="2">
+									</td>
+									<td align="center" class="tdbg">
+										boss
+									</td>
+									<td align="center" class="tdbg">
+										老板
+									</td>
+									<td align="center" class="tdbg">
+										<a href="role_deleteById?id=2">删除</a>
+										<a href="role_getRoleById?id=2">修改</a>
+										
+									</td>
+
+								</tr>
+							
+								<tr>
+									<td align="left" class="tdbg">
+										<input type="checkbox" name="checkbox" value="3">
+									</td>
+									<td align="center" class="tdbg">
+										dep
+									</td>
+									<td align="center" class="tdbg">
+										员工
+									</td>
+									<td align="center" class="tdbg">
+										<a href="role_deleteById?id=3">删除</a>
+										<a href="role_getRoleById?id=3">修改</a>
+										
+									</td>
+
+								</tr>
+							
+								<tr>
+									<td align="left" class="tdbg">
+										<input type="checkbox" name="checkbox" value="4">
+									</td>
+									<td align="center" class="tdbg">
+										diaoduyuan
+									</td>
+									<td align="center" class="tdbg">
+										车辆审批调度员
+									</td>
+									<td align="center" class="tdbg">
+										<a href="role_deleteById?id=4">删除</a>
+										<a href="role_getRoleById?id=4">修改</a>
+									
+									</td>
+
+								</tr>
+							
+
+						</table>
+						<table width="80%" border="0" align=center cellpadding="0"
+							cellspacing="0" bgcolor="#FFFFFF">
+							<tr>
+								<td width="10%" align="left" class="tdbg">
+									<INPUT id="chkAll" type="checkbox" value="checkbox"
+										name="chkAll" >
+									全选
+								</td>
+								<td width="90%" align="left" class="tdbg">
+									<STRONG>操作：</STRONG>
+									<INPUT type="button"  value="删除选定" name="Submit">
+								</td>
+							</tr>
+						</table>
+						<table width="80%" border="0" align=center cellpadding="2"
+							cellspacing="0" bgcolor="#FFFFFF" class="border">
+							<tr>
+								<td width="14%" height="40" align="left" class="tdbg">
+									&nbsp;
+								</td>
+								<td width="86%" align="left" class="tdbg">
+									
+								</td>
+							</tr>
+						</table>
+						<table width="80%" border="0" align=center cellpadding="2"
+				cellspacing="0" bgcolor="#FFFFFF" class="border">
+				<tr>
+					<td height="40" align="center" class="tdbg">
+						共有17条记录,每页10条记录&nbsp;&nbsp;<b>[1]</b><a href="?page=2">[2]</a><a title="下一页" href="?page=2">[>]</a>...<a title="最后一页" href="?page=2">[2]</a>
+					</td>
+				</tr>
+			</table>
+					</div>
+				</div>
+				<ul class="main_end">
+					<li class="main_end_left left"></li>
+					<li class="main_end_right right"></li>
+				</ul>
+			</div>
+		</form>
+	</body>
+</html>

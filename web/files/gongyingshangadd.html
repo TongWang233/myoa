@@ -1,0 +1,150 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=gb2312"/>
+    <title>添加供应商</title>
+    <link rel="stylesheet" href="../styles/style.css" type="text/css"/>
+    <link href="../styles/calendar-win2k-cold-1.css" rel="stylesheet" type="text/css" title="win2k-cold-1"/>
+    
+	
+</head>
+<body>
+<div id="main_body">
+    <!-- **************************************************************-->
+    <ul class="main_top">
+        <li class="main_top_left left">添加供应商</li>
+        <li class="main_top_right right"></li>
+    </ul>
+    <div class="main_content_rightbg">
+        <div class="main_content_leftbg">
+            <form id="form1" name="form1" method="post" action="/oademo/provide_addProvide" onSubmit="return doSubmit();">
+                <input type="hidden" name="operate" value="add">
+                <table width="98%" border="0" align=center cellpadding="2" cellspacing="1"
+                       bgcolor="#FFFFFF" class="border">
+                    <tr>
+                        <td width="20%" align="left" class="tdbg"><strong>供应商名称</strong>
+                        </td>
+                        <td width="80%" align="left" class="tdbg">
+                           <INPUT type="text" id="provideName" name="provides.provideName">
+                             <strong class="red" style="font-size:12px"><tt id="TipUserName0"></tt></strong>
+                            </td>
+                    </tr>
+
+                    <tr>
+                        <td width="20%" align="left" class="tdbg"><strong>供应商编码</strong>
+                        </td>
+                        <td width="80%" align="left" class="tdbg">
+                            <input id="provideNo" name="provides.provideNo"/>
+                            <strong class="red" style="font-size:12px"><tt id="TipUserName1"></tt></strong></td>
+                    </tr>
+                    <tr>
+                        <td width="20%" align="left" class="tdbg"><strong>供应商简称</strong>
+                        </td>
+                        <td width="80%" align="left" class="tdbg">
+                          <INPUT id="provideSname"
+                                   name="provides.provideSname">
+                                   <strong class="red" style="font-size:12px"><tt id="TipUserName2"></tt></strong>
+                                   </td>
+                    </tr>
+                    
+                   
+                    <tr>
+                        <td width="20%" align="left" class="tdbg"><strong>电话</strong>
+                        </td>
+                        <td width="80%" align="left" class="tdbg">
+                            <INPUT id="phone"
+                                   name="provides.phone">
+                                   <strong class="red" style="font-size:12px"><tt id="TipUserName3"></tt></strong>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td width="20%" align="left" class="tdbg"><strong>传真</strong>
+                        </td>
+                        <td width="80%" align="left" class="tdbg">
+                            <INPUT id="fax"
+                                   name="provides.fax">
+                            <strong class="red" style="font-size:12px"><tt id="TipUserName4"></tt></strong></td>
+                    </tr>
+                    <tr>
+                        <td width="20%" align="left" class="tdbg"><strong>网址</strong>
+                        </td>
+                        <td width="80%" align="left" class="tdbg">
+                            <INPUT id="webSite"
+                                   name="provides.webSite">
+                            <strong class="red" style="font-size:12px"><tt id="TipUserName5"></tt></strong></td>
+                    </tr>
+                    <tr>
+                        <td width="20%" align="left" class="tdbg"><strong>电子邮件</strong>
+                        </td>
+                        <td width="80%" align="left" class="tdbg">
+                            <INPUT id="email"
+                                   name="provides.email">
+                            <strong class="red" style="font-size:12px"><tt id="TipUserName6"></tt></strong></td>
+                    </tr>
+                    <tr>
+                        <td width="20%" align="left" class="tdbg"><strong>地区</strong>
+                        </td>
+                        <td width="80%" align="left" class="tdbg">
+                            <INPUT id="area" type="hidden"
+                                   name="provides.dictionary.dictionaryText">
+                                   <select name='provides.dictionary.dictionaryName' id='provides.dictionary.dictionaryName'><option value=''>--请选择--</option><option value='area_beijing'>北京</option><option value='area_hebei'>河北</option><option value='area_heilongjiang'>黑龙江</option><option value='area_jilin'>吉林</option><option value='area_liaoning'>辽宁</option><option value='area_shanghai'>上海</option><option value='area_tianjin'>天津</option></select>
+                                   </td>
+                    </tr>
+                    <tr>
+                        <td width="20%" align="left" class="tdbg"><strong>邮政编码</strong>
+                        </td>
+                        <td width="80%" align="left" class="tdbg">
+                            <INPUT id="postalcode"
+                                   name="provides.postalcode">
+                            <strong class="red" style="font-size:16px">*</strong></td>
+                    </tr>
+                    <tr>
+                        <td width="20%" align="left" class="tdbg"><strong>详细地址</strong>
+                        </td>
+                        <td width="80%" align="left" class="tdbg">
+                            <INPUT id="adder"
+                                   name="provides.adder">
+                            <strong class="red" style="font-size:16px">*</strong></td>
+                    </tr>
+                      <tr>
+                        <td width="20%" align="left" class="tdbg"><strong>备注</strong>
+                        </td>
+                        <td width="80%" align="left" class="tdbg">
+                            <INPUT id="remark"
+                                   name="provides.remark">
+                            <strong class="red" style="font-size:16px">*</strong></td>
+                    </tr>
+                      <tr>
+                        <td width="20%" align="left" class="tdbg"><strong>开户行</strong>
+                        </td>
+                        <td width="80%" align="left" class="tdbg">
+                            <INPUT id="bank"
+                                   name="">
+                            <strong class="red" style="font-size:16px">*</strong></td>
+                    </tr>
+                      <tr>
+                        <td width="20%" align="left" class="tdbg"><strong>账户</strong>
+                        </td>
+                        <td width="80%" align="left" class="tdbg">
+                            <INPUT id="accounts"
+                                   name="provides.bank">
+                            <strong class="red" style="font-size:16px">*</strong> <tt id="TipUserName0"></tt></td>
+                    </tr>
+                    <tr>
+                        <td align="left" class="tdbg">&nbsp;</td>
+                        <td align="left" class="tdbg"><INPUT  type="submit"
+                                                             value="确定" name="Button1" class="newButton">&nbsp;&nbsp;
+                            <button  value="取消" name="Button2"  class="newButton" >取消</button>
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </div>
+    <ul class="main_end">
+        <li class="main_end_left left"></li>
+        <li class="main_end_right right"></li>
+    </ul>
+</div>
+     
+</body>
+</html>

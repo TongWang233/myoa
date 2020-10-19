@@ -1,0 +1,289 @@
+<html>
+	<head>
+		<META HTTP-EQUIV="Pragma" CONTENT="no-cache">
+		<META HTTP-EQUIV="Cache-Control" CONTENT="no-cache">
+		<META HTTP-EQUIV="Expires" CONTENT="0">
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<title>区域信息列表</title>
+		<link rel="stylesheet"
+			href="../styles/style.css" type="text/css" />
+		
+	</head>
+	<body>
+		<div id="main_body">
+			<!-- ----------用户结构start -------------------------->
+			<ul class="main_top">
+				<li class="main_top_left left">
+					条件查询
+					<BR>
+				</li>
+				<li class="main_top_right right"></li>
+			</ul>
+			<form name="form1" method="post"
+				action="../Crm_getCliListByinfo">
+				<div class="main_content_rightbg">
+					<div class="main_content_leftbg">
+						<table width="80%" border="0" align=center cellpadding="2">
+							<tr>
+								<td>
+									客户名称：
+									<input type="text" class="tdbg"
+										name="client.clientName">
+								</td>
+								<td>
+									客户简称：
+									<input type="text" class="tdbg" name="client.shortName">
+								</td>
+								<td> 
+									所属地区： 
+									<input type="text" class="tdbg " name="client.area.dictionaryText">
+								</td>
+							</tr>
+							
+
+							<tr>
+								<td></td>
+								<td></td>
+								<td>
+									<input type="submit" value="查  询">
+									&nbsp;
+								</td>
+							</tr>
+						</table>
+					</div>
+				</div>
+			</form>
+			<ul class="main_end">
+				<li class="main_end_left left"></li>
+				<li class="main_end_right right"></li>
+			</ul>
+			<!-- ----------用户结构end -------------------------->
+
+
+			<!--******************************************** -->
+
+			<ul class="main_top">
+				<li class="main_top_left left"> 
+					客户列表<BR>
+				</li>
+				<li class="main_top_right right"></li>
+			</ul>
+			<div class="main_content_rightbg">
+				<div class="main_content_leftbg">
+
+					<form name="from2" method="post" action="../Crm_delMoreCli">
+						<table width="80%" border="0" align=center cellpadding="2"
+							cellspacing="1" bgcolor="#FFFFFF" class="border">
+							<tr>
+								<td width="5%" align="center" nowrap class="tdbg">
+									<strong>选择</strong>
+								</td>
+								<td width="10%" align="center" nowrap class="tdbg">
+									<strong>客户名称</strong>
+								</td>
+								<td width="10%" align="center" nowrap class="tdbg">
+									<strong>客户简称</strong>
+								</td>
+								<td width="10%" align="center" nowrap class="tdbg">
+									<strong>所属地区</strong>
+								</td>
+								<td width="10%" align="center" nowrap class="tdbg">
+									<strong>客户类型</strong>
+								</td>
+								<td width="10%" align="center" nowrap class="tdbg">
+									<strong>企业性质</strong>
+								</td>
+								<td width="10%" align="center" nowrap class="tdbg">
+									<strong>企业描述</strong>
+								</td>
+								<td width="15%" align="center" nowrap class="tdbg">
+									<strong>操作</strong>
+								</td>
+
+
+
+							</tr>
+							
+								<tr>
+
+
+									<tr>
+										<td>
+											<input align="center" type="checkbox" name="allId"
+												value="11" />
+
+										</td>
+										<td align="center">
+											
+											&#24352;&#39134;
+										</td>
+										<td align="center">
+											&#24352;
+										</td>
+										<td align="center">
+
+											&#21271;&#20140;
+
+										</td>
+										<td align="center">
+
+											
+											&#26222;&#36890;&#23458;&#25143;
+
+										</td>
+										<td align="center">
+											&#22269;&#26377;&#20225;&#19994;
+										</td>
+										<td align="center">
+
+											&#19977;&#22269;&#28436;&#20041;
+
+
+										</td>
+
+
+										<td align="center">
+											详细信息&nbsp;
+											删除
+											&nbsp;
+											修改
+										</td>
+
+									</tr>
+							
+								<tr>
+
+
+									<tr>
+										<td>
+											<input align="center" type="checkbox" name="allId"
+												value="12" />
+
+										</td>
+										<td align="center">
+											
+											&#21016;&#22791;
+										</td>
+										<td align="center">
+											&#21016;
+										</td>
+										<td align="center">
+
+											&#21271;&#20140;
+
+										</td>
+										<td align="center">
+
+											
+											&#26222;&#36890;&#23458;&#25143;
+
+										</td>
+										<td align="center">
+											&#22269;&#26377;&#20225;&#19994;
+										</td>
+										<td align="center">
+
+											&#19977;&#22269;&#28436;&#20041;
+
+
+										</td>
+
+
+										<td align="center">
+											<a
+												href="../Crm_getClientInfo?id=12">详细信息</a>
+											删除
+											修改
+										</td>
+
+									</tr>
+							
+								<tr>
+
+
+									<tr>
+										<td>
+											<input align="center" type="checkbox" name="allId"
+												value="13" />
+
+										</td>
+										<td align="center">
+											
+											&#21016;&#22791;
+										</td>
+										<td align="center">
+											&#21016;
+										</td>
+										<td align="center">
+
+											&#21271;&#20140;
+
+										</td>
+										<td align="center">
+
+											
+											&#26222;&#36890;&#23458;&#25143;
+
+										</td>
+										<td align="center">
+											&#22269;&#26377;&#20225;&#19994;
+										</td>
+										<td align="center">
+
+											&#19977;&#22269;&#28436;&#20041;
+
+
+										</td>
+
+
+										<td align="center">
+											<a
+												href="../Crm_getClientInfo?id=13">详细信息</a>
+											删除
+											修改
+										</td>
+
+									</tr>
+							
+
+						</table>
+						<table width="80%" border="0" align=center cellpadding="0"
+							cellspacing="0" bgcolor="#FFFFFF">
+							<tr>
+								<td width="10%" align="left" class="tdbg">
+									<input type="checkbox" id="all" name="all"
+>
+									全选
+								</td>
+								<td width="90%" align="left" class="tdbg">
+									<STRONG>操作：</STRONG>
+
+									<INPUT type="Submit" value="删除选定" name="Submit" >
+									<input type="button" value="新 建 "
+										onclick="javascript:window.location.href='kehuadd.html'">
+								</td>
+							</tr>
+							<tr>
+								<td colspan="3">
+									共有3条记录,每页10条记录&nbsp;&nbsp;<b>[1]</b>
+								</td>
+							</tr>
+						</table>
+					</form>
+					<ldp:PageTag actionUrl="AreaServlet.do?method=GetList" />
+
+					<table width="80%" border="0" align=center cellpadding="2"
+						cellspacing="0" bgcolor="#FFFFFF" class="border">
+						<tr>
+							<!-- <td height="40" align="center" class="tdbg"></td>-->
+						</tr>
+					</table>
+				</div>
+			</div>
+			<ul class="main_end">
+				<li class="main_end_left left"></li>
+				<li class="main_end_right right"></li>
+			</ul>
+		</div>
+	</body>
+</html>

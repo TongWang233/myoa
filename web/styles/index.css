@@ -1,0 +1,21 @@
+BODY {
+	FONT-SIZE: 9pt; BACKGROUND: url(../images/loginbg.jpg) #d3e1ee no-repeat center top
+}
+b {
+	FONT-SIZE: 10pt
+}
+.login_div {
+	MARGIN-TOP: 386px; TEXT-ALIGN: center
+}
+INPUT.text {
+	BORDER-RIGHT: #404040 1px solid; PADDING-RIGHT: 0px; BORDER-TOP: #404040 1px solid; PADDING-LEFT: 5px; FONT-SIZE: 9pt; PADDING-BOTTOM: 2px; BORDER-LEFT: #404040 1px solid; WIDTH: 100px; PADDING-TOP: 2px; BORDER-BOTTOM: #404040 1px solid
+}
+INPUT.submit {
+	BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; FONT-SIZE: 12px; no-repeat; BORDER-BOTTOM-WIDTH: 0px; WIDTH: 74px; CURSOR: pointer; COLOR: #36434e; HEIGHT: 21px; BORDER-RIGHT-WIDTH: 0px
+}
+INPUT.submit:hover {
+	BACKGROUND-POSITION: 0px -21px; FONT-SIZE: 12px
+}
+A {
+	COLOR: #000000
+}

@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="df798ffd-6bc5-440c-8778-8e9929004b3e" name="默认更改列表" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="E:/maven/apache-maven-3.6.3" />
+        <option name="userSettingsFile" value="E:\maven\apache-maven-3.6.3\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1j2bqw16WoigHFpVzokSR2moFC2" />
+  <component name="ProjectViewState">
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showVisibilityIcons" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../maventest2" />
+    <property name="settings.editor.selected.configurable" value="File.Encoding" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\ideaProject\myoa\web" />
+      <recent name="E:\ideaProject\myoa\src\main\resources" />
+      <recent name="E:\ideaProject\myoa\src\main" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\ideaProject\myoa\src\main\java" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Maven.myoa []">
+    <configuration name="MybatisTest.testFindUserById" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="myoa" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.wwy.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.wwy.test" />
+      <option name="MAIN_CLASS_NAME" value="com.wwy.test.MybatisTest" />
+      <option name="METHOD_NAME" value="testFindUserById" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="myoa []" type="MavenRunConfiguration" factoryName="Maven" nameIsGenerated="true">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list />
+            </option>
+            <option name="pomFileName" />
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="JUnit.MybatisTest.testFindUserById" />
+      <item itemvalue="Maven.myoa []" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.MybatisTest.testFindUserById" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="df798ffd-6bc5-440c-8778-8e9929004b3e" name="默认更改列表" comment="" />
+      <created>1603005327072</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1603005327072</updated>
+      <workItem from="1603005328552" duration="770000" />
+      <workItem from="1603006109062" duration="2419000" />
+      <workItem from="1603008922580" duration="72000" />
+      <workItem from="1603009013603" duration="672000" />
+      <workItem from="1603011862240" duration="610000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="223" y="70" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1603008927483">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="223" y="70" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1603008927483" />
+    <state x="598" y="221" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1603005476058">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="598" y="221" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.824@0.0.1536.824" timestamp="1603005476058" />
+    <state x="574" y="105" key="#com.intellij.ide.util.MemberChooser" timestamp="1603007522774">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="574" y="105" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1603007522774" />
+    <state x="391" y="93" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog" timestamp="1603006452535">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="391" y="93" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog/0.0.1536.824@0.0.1536.824" timestamp="1603006452535" />
+    <state x="570" y="204" key="FileChooserDialogImpl" timestamp="1603008971673">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="570" y="204" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1603008971673" />
+    <state width="1493" height="270" key="GridCell.Tab.0.bottom" timestamp="1603012478434">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="270" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1603012478434" />
+    <state width="1493" height="270" key="GridCell.Tab.0.center" timestamp="1603012478434">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="270" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1603012478434" />
+    <state width="1493" height="270" key="GridCell.Tab.0.left" timestamp="1603012478434">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="270" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1603012478434" />
+    <state width="1493" height="270" key="GridCell.Tab.0.right" timestamp="1603012478434">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="270" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1603012478434" />
+    <state x="111" y="141" key="Maven.ArtifactSearchDialog" timestamp="1603007395612">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="111" y="141" key="Maven.ArtifactSearchDialog/0.0.1536.824@0.0.1536.824" timestamp="1603007395612" />
+    <state x="272" y="57" key="SettingsEditor" timestamp="1603009565764">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="272" y="57" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1603009565764" />
+  </component>
+</project>

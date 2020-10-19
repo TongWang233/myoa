@@ -1,0 +1,147 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+	<head>
+	
+
+		<!--
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	-->
+
+		<script type="text/javascript">
+function treeBM(){
+
+  window.open('__tag_30$15_department_shoowDepatement');
+}
+
+</script>
+		<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+		<title>添加部门</title>
+		<link rel="stylesheet"
+			href="../styles/style.css" type="text/css" />
+		<link
+			href="../styles/calendar-win2k-cold-1.css"
+			rel="stylesheet" type="text/css" title="win2k-cold-1" />
+		
+
+	</head>
+	<body>
+		<form name="form1" method="post" action="department_saveOrUpdate">
+			<input type="hidden" name="bz" value="update">
+			<div id="main_body">
+				<!-- **************************************************************-->
+				<ul class="main_top">
+					<li class="main_top_left left">
+						添加部门
+					</li>
+					<li class="main_top_right right"></li>
+				</ul>
+				<div class="main_content_rightbg">
+					<div class="main_content_leftbg">
+						<input type="hidden" name="department.departmentId"
+							value="1">
+						<input type="hidden" name="department.status"
+							value="1">
+						<table width="98%" border="0" align=center cellpadding="2"
+							cellspacing="1" bgcolor="#FFFFFF" class="border">
+							<tr>
+								<td width="20%" align="left" class="tdbg">
+									<strong>部门名称</strong>
+								</td>
+								<td width="80%" align="left" class="tdbg">
+									<INPUT type="text" id="departmentName"
+										name="department.departmentName"
+										value="学习部">
+									<strong class="red" style="font-size: 16px">*</strong>
+								</td>
+							</tr>
+<tr>
+								<td width="20%" align="left" class="tdbg">
+									<strong>部门编号</strong>
+								</td>
+								<td width="80%" align="left" class="tdbg">
+									<INPUT type="text" id="departmentNo"
+										name="department.departmentName"
+										>
+									<strong class="red" style="font-size: 16px">*</strong>
+								</td>
+							</tr>
+							<tr>
+								<td width="20%" align="left" class="tdbg">
+									<strong>部门电话</strong>
+								</td>
+								<td width="80%" align="left" class="tdbg">
+									<INPUT id="departmentPhone" name="department.departmentPhone"
+										value="111">
+							</tr>
+
+
+							<tr>
+								<td width="20%" align="left" class="tdbg">
+									<strong>部门传真</strong>
+								</td>
+								<td width="80%" align="left" class="tdbg">
+									<INPUT id="departmentFax" name="department.departmentFax"
+										value="111">
+								</td>
+							</tr>
+							<tr>
+								<td width="20%" align="left" class="tdbg">
+									<strong>所属部门(上级部门)</strong>
+								</td>
+								<td width="80%" align="left" class="tdbg">
+									<INPUT type="hidden" id="departmentNo"
+										name="department.departmentNo"
+										value="01">
+									<INPUT type="text" id="departmentParent"
+										name="department.departmentParent"
+										value="无" readonly>
+									<input type="hidden" name="filelx" value="jsp,txt">
+									<input type="button" name="button" value="选择" class=
+	
+
+										onclick="treeBM()" />
+
+									<strong class="red" style="font-size: 16px">*</strong>
+								</td>
+							</tr>
+							<tr>
+								<td width="20%" align="left" class="tdbg">
+									<strong>部门职能</strong>
+								</td>
+								<td width="80%" align="left" class="tdbg">
+									<INPUT id="departmentRemark" name="department.departmentRemark"
+										value="777771">
+									<strong class="red" style="font-size: 16px">*</strong>
+								</td>
+							</tr>
+
+
+							<tr>
+								<td align="left" class="tdbg">
+									&nbsp;
+								</td>
+								<td align="left" class="tdbg">
+									<input type="hidden" name="type"
+										value="01">
+									<INPUT id="Button1" type="submit" value="确定" name="Button1"
+					
+	
+onClick="return validateInput()">
+									&nbsp;&nbsp;
+									<INPUT id="Button2" type="button" value="取消" name="Button2"
+										class="newButton"
+										onClick="window.history.go(-1)">
+								</td>
+							</tr>
+						</table>
+
+					</div>
+				</div>
+				<ul class="main_end">
+					<li class="main_end_left left"></li>
+					<li class="main_end_right right"></li>
+				</ul>
+			</div>
+		</form>
+	</body>
+</html>

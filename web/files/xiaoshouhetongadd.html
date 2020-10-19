@@ -1,0 +1,172 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>添加合同</title>
+    <link rel="stylesheet" href="../styles/style.css" type="text/css"/>
+    <link href="../styles/calendar-win2k-cold-1.css" rel="stylesheet" type="text/css" title="win2k-cold-1"/>
+    <script type="text/javascript" src="../js/public.js"></script>
+    <script type="text/javascript" src="../js/calendar.js"></script>
+	<script type="text/javascript" src="../js/calendar-zh.js"></script>
+	<script type="text/javascript" src="../js/calendar-setup.js"></script>
+	 <script type="text/javascript">
+    function tree()
+		{
+			window.open('../department/tree.jsp','','status=no,scrollbars=no,top=20,left=600,width=500,height=400');
+        }
+
+  </script>
+	
+</head>
+<body>
+<div id="main_body">
+    <!-- **************************************************************-->
+    <ul class="main_top">
+        <li class="main_top_left left">添加合同</li>
+        <li class="main_top_right right"></li>
+    </ul>
+    <div class="main_content_rightbg">
+        <div class="main_content_leftbg">
+            <form name="form1" method="post" action="" onSubmit="return doSubmit();">
+                <input type="hidden" name="operate" value="add"/>"
+                <table width="885" border="0" align=center cellpadding="2" cellspacing="1"
+                       bgcolor="#FFFFFF" class="border" height="532">
+                    <tr>
+                      <td width="14%" height="22" align="left" class="tdbg"><div align="left"><strong>客户名称</strong></div></td>
+                <td width="31%" valign="top">
+                 <input type="hidden" name="bargain.client.clientId" id="clientId"/>
+                 <INPUT id="clientName" name="bargain.client.clientName" readonly >
+                 <input type="button" name="aa" class="newButton" value="选择" onClick="window.open('../barGain_selectClient','','status=no,scrollbars=no,top=20,left=110,width=1000,height=600')">
+			  <strong class="red" style="font-size:16px"></strong><br></td>
+			  <td width="16%" align="left" class="tdbg"><strong>合同编号</strong>
+                            </td>
+                    <td width="43%" align="left" class="tdbg">
+                    <INPUT id="bargainNo" name="bargain.bargainNo">
+                            <strong class="red" style="font-size:16px">*</strong></td>
+                    </tr>
+                    <tr>
+                      <td width="12%" height="23" align="left" class="tdbg"><strong>合同类型</strong><br></td>
+                         <td width="43%" align="left" class="tdbg"><INPUT id="bargainType"
+                                   name="bargain.bargainTypes">
+                            <strong class="red" style="font-size:16px">*</strong></td>
+                    </tr>
+                    
+                   
+                    <tr>
+                      <td width="12%" height="22" align="left" class="tdbg"><strong>合同名称</strong><br></td>
+                        <td colspan="3" valign="top">
+                            <INPUT id="bargainName"
+                                   name="bargain.bargainName" size="70">
+                                   <strong class="red" style="font-size:16px">*</strong>                        </td>
+                    </tr>
+                    <tr>
+                      <td width="12%" height="33" align="left" class="tdbg"><strong>合同描述</strong><br></td>
+                        <td colspan="3" valign="top"><strong class="red" style="font-size:16px">
+                        <label>
+                        <textarea name="bargain.bargainDescribe" cols="80" ></textarea>
+                        </label>
+                        </strong></td>
+                    </tr>
+                    <tr>
+                      <td width="12%" height="33" align="left" class="tdbg"><strong>合同条款</strong><br></td>
+                        <td colspan="3" valign="top"><strong class="red" style="font-size:16px">
+                          <textarea name="bargain.bargainArticle" id="bargainArticle" rows="4" cols="80" ></textarea>
+                        </strong></td>
+                    </tr>
+                    <tr>
+                      <td width="12%" height="85" align="left" class="tdbg"><strong>合同内容</strong><br></td>
+                        <td colspan="3" valign="top"><strong class="red" style="font-size:16px">
+                          <textarea name="bargain.bargainText" rows="6" cols="80"></textarea>
+                        </strong></td>
+                    </tr>
+                    <tr>
+                      <td width="12%" height="25" align="left" class="tdbg"><strong>生效日期</strong></td>
+                        <td valign="top"><INPUT id="begin_date_b"
+                                   name="bargain.starTime" readonly="readonly"><input type="reset" value="选择" class="newButton"
+                                   onclick="return showCalendar('begin_date_b', 'y-m-d');">
+                        <strong class="red" style="font-size:16px">*</strong><br></td>
+                        
+                        <td width="14%" align="left" class="tdbg"><strong>终止日期</strong><br>
+                          </td>
+                        <td width="43%" align="left" class="tdbg"><INPUT id="end_date_b"
+                                   name="bargain.endTime" readonly="readonly"><input type="reset" value="选择" class="newButton"
+                                   onclick="return showCalendar('end_date_b', 'y-m-d');">
+                            <strong class="red" style="font-size:16px">*</strong></td>
+                    </tr>
+                    <tr>
+                        <td width="12%" height="22" align="left" class="tdbg"><strong>签约人（买方)</strong><br>
+                      </td>
+                        <td valign="top"><INPUT id="buy"
+                                   name="bargain.buy">
+                            <strong class="red" style="font-size:16px">*</strong></td>
+                            
+                            <td width="14%" align="left" class="tdbg"><strong>签约人（卖方）</strong>
+                            </td>
+                        <td valign="top">
+                         <INPUT type="hidden" id="userID" name="bargain.userId.userId" value="">
+                         <input id="userName" name="userChnname" readonly ><input type="button" name="aa" class="newButton" value="选择" onClick="tree()">
+                            <strong class="red" style="font-size:16px">*</strong></td>
+                    </tr>
+                    <tr>
+                      <td width="12%" height="25" align="left" class="tdbg"><strong>创建日期</strong><br></td>
+                        <td valign="top"><INPUT id="create_date_b"
+                                   name="bargain.createTime" readonly="readonly"><input type="reset" value="选择" class="newButton"
+                                   onclick="return showCalendar('create_date_b', 'y-m-d');">
+                                   <strong class="red" style="font-size:16px">*</strong><br></td>
+                          <td width="14%" align="left" class="tdbg"><strong>创建人</strong></td>
+                        <td width="43%" align="left" class="tdbg">
+                    <strong class="red" style="font-size:16px">
+                         <input type="text" id="createMan" name="bargain.userId.userChnname" value="24" readonly="readonly">
+                         *</strong></td>
+                    </tr>
+                    <tr>
+                      <td width="12%" height="20" align="left" class="tdbg"><strong>合同附件</strong><br></td>
+                        <td colspan="3" valign="top">
+                        	
+                        <strong class="red" style="font-size:16px"></strong></td>
+                    </tr>
+                    <tr>
+                      <td width="12%" height="20" align="left" class="tdbg"><strong>添加附件</strong><br></td>
+                        <td colspan="3" valign="top">
+                        <INPUT id="accessories" name="bargain.accessories">
+                        <input type="hidden" name="fromName" value="form1">
+                        <input type="hidden" name="filelx" value="jsp,txt">
+                        <input type="button" name="pictureButton" value="添加" class="newButton" onClick="window.open('../BarGain/addAppendix.jsp?formName=form1&editName=accessones&filelx=jsp','','status=no,scrollbars=no,top=20,left=110,width=1000,height=165')">
+                           </td>                 
+                                               <strong class="" style="font-size:16px">
+                    <tr>
+                      <td height="17" colspan="4" align="left" class="tdbg"><strong>合同备注</strong></td>
+                    </tr>
+                    <tr>
+                      <td width="12%" height="59" align="left" class="tdbg"><strong>备注1</strong><br></td>
+                        <td colspan="3" valign="top"><strong class="red" style="font-size:16px">
+                          <textarea name="bargain.remark1" rows="4" cols="80" ></textarea>
+                        </strong>&nbsp;<strong class="red" style="font-size:16px"></strong></td>
+                    </tr>
+                    <tr>
+                      <td width="12%" height="59" align="left" class="tdbg"><strong>备注2</strong><br></td>
+                        <td colspan="3" valign="top">
+                          <strong class="red" style="font-size:16px">
+                          <textarea name="bargain.remark2" rows="4" cols="80" ></textarea>
+                        </strong>&nbsp;<strong class="red" style="font-size:16px"></strong></td>
+                    </tr>
+                    
+                    <tr>
+                        <td height="25" align="left" class="tdbg">&nbsp;</td>
+                        <td valign="top"><br></td><td align="left" class="tdbg"><INPUT id="Button1" type="submit"
+                                                             value="确定" name="Button1" class="newButton">&nbsp;&nbsp;
+                            <INPUT id="Button2" type="submit" value="取消" name="Button2" class="newButton" onClick.open.="javascript:history.go(-1)">
+                        </td>
+                        <td align="left" class="tdbg">&nbsp;</td>
+                    </tr>
+              </table>
+            </form>
+        </div>
+    </div>
+    <ul class="main_end">
+        <li class="main_end_left left"></li>
+        <li class="main_end_right right"></li>
+    </ul>
+</div>
+</body>
+</html>

@@ -1,0 +1,343 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<META HTTP-EQUIV="Pragma" CONTENT="no-cache">
+	<META HTTP-EQUIV="Cache-Control" CONTENT="no-cache">
+	<META HTTP-EQUIV="Expires" CONTENT="0">
+	<title>OA管理系统</title>
+	<script type="text/javascript"
+	src="../js/jquery.js">
+</script>
+<script type='text/javascript' src='../js/public.js'>
+</script>
+<link rel="stylesheet"
+	href="../styles/style.css" />
+<link rel="stylesheet"
+	href="../styles/calendar-win2k-cold-1.css"
+	rel="stylesheet" type="text/css" title="win2k-cold-1" />
+
+<script type="text/javascript"
+	src="../js/calendar.js">
+</script>
+<script type="text/javascript"
+	src="../js/calendar-zh.js">
+</script>
+<script type="text/javascript"
+	src="../js/calendar-setup.js">
+</script>
+    <script type="text/javascript">
+        function frmSub(frm, objectname)
+        {
+            var value = $GetFromAllElement(frm, objectname);
+            if (value.length == 0)
+            {
+                //alert("testing....");
+                alert("请选择记录再操作！");
+                return false;
+            }
+             return $MC('你确定删除吗?');
+            return true;
+        }
+         function submit2(frm, objectname){
+			var value = $GetFromAllElement(frm, objectname);
+            if (value.length == 0)
+            {
+                alert("请选择记录再操作！");
+            }
+            else
+            {
+                document.form1.action="../bargain_detAll";
+				document.form1.submit();
+			}
+		}
+        
+    </script>
+</head>
+<body>
+<div id="main_body">
+	<!-- ----------用户结构start -------------------------->
+	<ul class="main_top">
+        <li class="main_top_left left">用户查询<BR>
+        </li>
+      
+    </ul>
+    <form name="form2" method="post"
+                  action="../barGain_vagueBargain">
+                  <input type="hidden" name="bargain.bargainId"/>
+    <div class="main_content_rightbg">
+        <div class="main_content_leftbg">
+        	<table width="80%" border="0" align=center cellpadding="2" cellspacing="1"
+                       bgcolor="#FFFFFF"
+                       class="border">
+                       <tr>
+                        	<td width="10%" align="right" nowrap class="tdbg">
+                        		<strong>合同名称：</strong>
+                        	</td>
+                        	<td width="30%" align="left" nowrap class="tdbg">
+                        		<input type="text" name="bargain.bargainName">
+                        	</td>
+                        	<td width="10%" align="right" nowrap class="tdbg">
+                        		<strong>合同编码：</strong>
+                        	</td>
+                        	<td width="30%" align="left" nowrap class="tdbg">
+                        		<input type="text" name="bargain.bargainNo">
+                        	</td>
+                        	<td width="20%" align="center" nowrap class="tdbg">
+                        	</td>
+                        </tr>
+                        <tr>
+                        	<td width="10%" align="right" nowrap class="tdbg">
+                        		
+                        	</td>
+                        	<td width="30%" align="left" nowrap class="tdbg">
+                        		
+                        	</td>
+                        	<td width="10%" align="right" nowrap class="tdbg">
+                        		
+                        	</td>
+                        	<td width="30%" align="left" nowrap class="tdbg">
+                        		
+                        	</td>
+                        	
+                        	<td width="20%" align="center" nowrap class="tdbg">
+                        		<input type="submit" value="查  询" class="newButton">
+                        	</td>
+                        </tr>
+            </table>
+        </div>
+    </div>
+    <ul class="main_end">
+            </ul>
+            </form>
+    <!-- ----------用户结构end -------------------------->
+    
+    
+    <!--******************************************** -->
+    <form name="form1" method="post"
+                  action="../bargain_detAll">
+    <ul class="main_top">
+        <li class="main_top_left left">用户列表<BR>
+        </li>
+       
+    </ul>
+    <div class="main_content_rightbg">
+        <div class="main_content_leftbg">
+
+            
+                <table width="80%"  border="0" align=center cellpadding="2" cellspacing="1"
+                       bgcolor="#FFFFFF"
+                       class="border">
+                    <tr>
+                        <td width="5%"  align="center" nowrap class="tdbg">
+                            <strong>选择</strong></td>
+                        <td  width="5%" align="center" class="tdbg"><strong>客户名称</strong>
+                        </td>
+                        <td width="5%" align="center" class="tdbg"><strong>合同编号</strong>
+                        </td>
+                        <td width="5%" align="left" class="tdbg">
+                           <strong>合同类型</strong>
+                        </td>
+                        
+                        <td width="5%" align="left" class="tdbg">
+                            <div align="center"><strong>合同名称</strong></div>
+                        </td>
+                        <td width="5%" align="center" class="tdbg"><strong>合同描述</strong>
+                        </td>
+                        
+                        <td width="5%" align="center" nowrap class="tdbg">
+                            <strong>合同条款</strong></td>
+                            <td width="5%" align="center" class="tdbg"><strong>合同内容</strong>
+                        </td>
+                        <td width="5%" align="center" class="tdbg"><strong>生效日期</strong>
+                        </td>
+                          <td align="left" class="tdbg">
+                            <div align="center"><strong>终止日期</strong></div>
+                        </td>
+                        <td  align="center" class="tdbg"><strong>签约人（买方）</strong>
+                        </td>
+                        
+                        <td  align="center" nowrap class="tdbg">
+                            <strong>签约人（卖方）</strong></td>
+                            <td width="5%" align="center" class="tdbg"><strong>创建日期</strong>
+                        </td>
+                        <td  align="center" class="tdbg"><strong>创建人</strong>
+                        </td>
+                        <td  align="center" nowrap class="tdbg">
+                            <strong>合同附件</strong></td>
+                         <td align="center" nowrap class="tdbg">
+                            <strong>备注1</strong></td>
+                         <td width="5%" align="center" nowrap class="tdbg">
+                            <strong>备注2</strong></td>                     
+                        
+                        <td  align="center" class="tdbg"><STRONG>操作：</STRONG>
+                        </td>
+            </tr>
+                   
+                      <tr>
+                         <td align="center" class="tdbg">
+                           <input type="checkbox" name="bargainId" value="1"/>
+                         </td>
+                         <td align="center" class="tdbg">&#24352;&#39134;</td>
+                         <td align="center" class="tdbg">1001</td>
+                         <td align="center" class="tdbg">&#22522;&#26412;&#21512;&#21516;</td>
+                         <td align="center" class="tdbg">&#20154;&#25165;&#31649;&#29702;&#36164;&#28304;&#21512;&#21516;</td>
+                         <td align="center" class="tdbg">&#20154;&#25165;&#31649;&#29702;</td>
+                         <td align="center" class="tdbg">1&#65289;&#20998;&#37197;&#24037;&#20316;
+2&#65289;&#33258;&#20027;&#23454;&#20064;</td>
+                         <td align="center" class="tdbg">&#25512;&#33616;&#24037;&#20316;</td>
+                         <td align="center" class="tdbg">2011-2-1</td>
+                         <td align="center" class="tdbg">2012-2-1</td>
+                         <td align="center" class="tdbg">&#21016;&#22825;&#40857;</td>
+                         <td align="center" class="tdbg">&#23567;&#20843;</td>
+                         <td align="center" class="tdbg">2012-4-3</td>
+                         <td align="center" class="tdbg">&#23567;&#20843;</td>
+                         <td align="center" class="tdbg">D:\\localhost:8080</td>
+                         <td align="center" class="tdbg">&#38468;&#21152;&#22320;&#22336;</td>
+                         <td align="center" class="tdbg">&#38468;&#21152;&#30005;&#35805;</td>
+                         <td align="center" class="tdbg">
+                            <a href="../barGain_deleteBarGain?Id=1">删除</a>
+                            <a href="../barGain_getById?id=1">修改</a>
+                         </td>
+                      </tr>
+                   
+                      <tr>
+                         <td align="center" class="tdbg">
+                           <input type="checkbox" name="bargainId" value="7"/>
+                         </td>
+                         <td align="center" class="tdbg">&#21016;&#22791;</td>
+                         <td align="center" class="tdbg">1002</td>
+                         <td align="center" class="tdbg">&#22522;&#26412;&#21512;&#21516;</td>
+                         <td align="center" class="tdbg">&#29615;&#22659;&#24066;&#22330;&#35843;&#26597;&#21512;&#21516;</td>
+                         <td align="center" class="tdbg">&#20154;&#25165;&#31649;&#29702;</td>
+                         <td align="center" class="tdbg">1&#65289;&#20998;&#37197;&#24037;&#20316;
+2&#65289;&#33258;&#20027;&#23454;&#20064;</td>
+                         <td align="center" class="tdbg">&#25512;&#33616;&#24037;&#20316;</td>
+                         <td align="center" class="tdbg">2011-2-1</td>
+                         <td align="center" class="tdbg">2012-2-1</td>
+                         <td align="center" class="tdbg">&#21016;&#22825;&#40857;</td>
+                         <td align="center" class="tdbg">&#23567;&#20843;</td>
+                         <td align="center" class="tdbg">2012-4-3</td>
+                         <td align="center" class="tdbg">&#23567;&#20843;</td>
+                         <td align="center" class="tdbg">D:\\localhost:8080</td>
+                         <td align="center" class="tdbg">&#38468;&#21152;&#22320;&#22336;</td>
+                         <td align="center" class="tdbg">&#38468;&#21152;&#30005;&#35805;</td>
+                         <td align="center" class="tdbg">
+                            <a href="../barGain_deleteBarGain?Id=7">删除</a>
+                            <a href="../barGain_getById?id=7">修改</a>
+                         </td>
+                      </tr>
+                   
+                      <tr>
+                         <td align="center" class="tdbg">
+                           <input type="checkbox" name="bargainId" value="8"/>
+                         </td>
+                         <td align="center" class="tdbg">&#21016;&#22791;</td>
+                         <td align="center" class="tdbg">1001</td>
+                         <td align="center" class="tdbg">&#22522;&#26412;&#21512;&#21516;</td>
+                         <td align="center" class="tdbg">&#20154;&#25165;&#31649;&#29702;&#36164;&#28304;&#21512;&#21516;</td>
+                         <td align="center" class="tdbg">&#20154;&#25165;&#31649;&#29702;</td>
+                         <td align="center" class="tdbg">1&#65289;&#20998;&#37197;&#24037;&#20316;
+2&#65289;&#33258;&#20027;&#23454;&#20064;</td>
+                         <td align="center" class="tdbg">&#25512;&#33616;&#24037;&#20316;</td>
+                         <td align="center" class="tdbg">2011-2-1</td>
+                         <td align="center" class="tdbg">2012-2-1</td>
+                         <td align="center" class="tdbg">&#21016;&#22825;&#40857;</td>
+                         <td align="center" class="tdbg">&#23567;&#20843;</td>
+                         <td align="center" class="tdbg">2012-4-3</td>
+                         <td align="center" class="tdbg">&#23567;&#20843;</td>
+                         <td align="center" class="tdbg">D:\\localhost:8080</td>
+                         <td align="center" class="tdbg">&#38468;&#21152;&#22320;&#22336;</td>
+                         <td align="center" class="tdbg">&#38468;&#21152;&#30005;&#35805;</td>
+                         <td align="center" class="tdbg">
+                            <a href="../barGain_deleteBarGain?Id=8">删除</a>
+                            <a href="../barGain_getById?id=8">修改</a>
+                         </td>
+                      </tr>
+                   
+                      <tr>
+                         <td align="center" class="tdbg">
+                           <input type="checkbox" name="bargainId" value="14"/>
+                         </td>
+                         <td align="center" class="tdbg">&#24352;&#39134;</td>
+                         <td align="center" class="tdbg">14</td>
+                         <td align="center" class="tdbg">&#39640;&#32423;&#21512;&#21516;</td>
+                         <td align="center" class="tdbg">&#31038;&#20250;&#31649;&#29702;</td>
+                         <td align="center" class="tdbg">&#31038;&#20250;&#31649;&#29702;</td>
+                         <td align="center" class="tdbg">&#31038;&#20250;&#31649;&#29702;</td>
+                         <td align="center" class="tdbg">&#31038;&#20250;&#31649;&#29702;</td>
+                         <td align="center" class="tdbg">2012-1-26</td>
+                         <td align="center" class="tdbg">2012-2-24</td>
+                         <td align="center" class="tdbg">&#20911;&#38634;&#26757;</td>
+                         <td align="center" class="tdbg">&#38647;&#22823;&#40527;</td>
+                         <td align="center" class="tdbg"></td>
+                         <td align="center" class="tdbg">&#38647;&#22823;&#40527;</td>
+                         <td align="center" class="tdbg">17</td>
+                         <td align="center" class="tdbg">18</td>
+                         <td align="center" class="tdbg">718</td>
+                         <td align="center" class="tdbg">
+                            <a href="../barGain_deleteBarGain?Id=14">删除</a>
+                            <a href="../barGain_getById?id=14">修改</a>
+                         </td>
+                      </tr>
+                   
+                      <tr>
+                         <td align="center" class="tdbg">
+                           <input type="checkbox" name="bargainId" value="15"/>
+                         </td>
+                         <td align="center" class="tdbg">&#24352;&#39134;</td>
+                         <td align="center" class="tdbg">16</td>
+                         <td align="center" class="tdbg">&#26222;&#36890;&#21512;&#21516;</td>
+                         <td align="center" class="tdbg">&#29615;&#22659;&#31649;&#29702;&#21512;&#21516;</td>
+                         <td align="center" class="tdbg">&#29615;&#22659;&#31649;&#29702;&#21512;&#21516;</td>
+                         <td align="center" class="tdbg">&#29615;&#22659;&#31649;&#29702;&#21512;&#21516;</td>
+                         <td align="center" class="tdbg">&#29615;&#22659;&#31649;&#29702;&#21512;&#21516;</td>
+                         <td align="center" class="tdbg">2012-1-12</td>
+                         <td align="center" class="tdbg">2012-1-10</td>
+                         <td align="center" class="tdbg">&#29579;&#32988;&#23431;</td>
+                         <td align="center" class="tdbg">&#23567;&#23828;</td>
+                         <td align="center" class="tdbg"></td>
+                         <td align="center" class="tdbg">&#23567;&#23828;</td>
+                         <td align="center" class="tdbg">12</td>
+                         <td align="center" class="tdbg">12</td>
+                         <td align="center" class="tdbg">12</td>
+                         <td align="center" class="tdbg">
+                            <a href="../barGain_deleteBarGain?Id=15">删除</a>
+                            <a href="../barGain_getById?id=15">修改</a>
+                         </td>
+                      </tr>
+                   
+                </table>
+                <table width="80%" border="0" align=center cellpadding="0" cellspacing="0"
+                       bgcolor="#FFFFFF">
+                    <tr>
+                       <td width="10%" align="left" class="tdbg"><INPUT id="chkAll"
+                                                                         type="checkbox"
+                                                                         value="checkbox"
+                                                                         name="chkAll"
+                                                                         onclick="$CHKBoxALL(document.form1, this, '');">
+                            全选
+                        </td>
+                        <td width="90%" align="left" class="tdbg"><STRONG>操作：</STRONG>
+                          
+                                <INPUT type="submit" value="删除选定" name="Submit" onclick="return frmSub(document.form1, 'bargainId')" class="newButton">
+                          		<INPUT type="button" value="添&nbsp;&nbsp;&nbsp;&nbsp;加" name="addButton" onclick="javascript:window.location.href='xiaoshouhetongadd.html'" class="newButton">
+                          		
+                            </td>
+                    </tr>
+                </table>
+            </form>
+             <table width="80%" border="0" align=center cellpadding="2" cellspacing="0"
+                   bgcolor="#FFFFFF" class="border">
+                <tr>
+                    <td height="40" align="center" class="tdbg">共有5条记录,每页10条记录&nbsp;&nbsp;<b>[1]</b></td>
+                </tr>
+            </table>
+        </div>
+  
+     <ul class="main_end">
+        <li class="main_end_left left"></li>
+        <li class="main_end_right right"></li>
+    </ul>
+
+</body>
+</html>

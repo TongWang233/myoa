@@ -1,0 +1,82 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=gbk"/>
+    <title>客户服务信息的查询及添加</title>
+    <link rel="stylesheet" href="../styles/style.css" type="text/css"/>
+    <link href="../styles/calendar-win2k-cold-1.css" rel="stylesheet" type="text/css" title="win2k-cold-1"/>  
+    <script type="text/javascript" src="../js/public.js"></script>
+</head>
+<body>
+<div id="main_body">
+    <!--******************************************** -->
+    <ul class="main_top">
+        <li class="main_top_left left">客户服务列表2012/5/9<BR>
+        </li>
+        <li class="main_top_right right"></li>
+    </ul>
+    <div class="main_content_rightbg">
+        <div class="main_content_leftbg">
+                  <form id="clientService_getCslByHuan" name="form2" action="/oademo/clientService_getCslByHuan" method="post">
+			     	<table width="105%" border="0" align=center cellpadding="2" cellspacing="1"
+                       bgcolor="#FFFFFF"
+                       class="border">
+                    <tr>
+                        <td align="center" class="tdbg"><strong>客户名称</strong></td> 
+                        <td align="center" class="tdbg"><strong>联系人</strong> </td>
+                        <td align="center" class="tdbg">
+                            <div align="center"><strong>服务类型</strong></div> </td>
+                        <td align="center" class="tdbg">
+                            <div align="center"><strong>服务日期</strong></div> </td>
+                        <td align="center" class="tdbg">
+                            <div align="center"><strong>服务内容</strong></div>   </td>
+                        <td width="20%" align="center" nowrap class="tdbg">
+                            <strong>操作</strong></td>
+                    </tr>
+                    
+                        <tr>
+                            <td align="center" class="tdbg">&#24352;&#39134;</td>
+                            <td align="center" class="tdbg">&#23567;&#32654;&#20029;</td>
+                            <td align="center" class="tdbg">&#19978;&#38376;&#26381;&#21153;</td>
+                            <td align="center" class="tdbg">2012-01-10</td>
+                            <td align="center" class="tdbg">12.0</td>
+                            <td align="center" class="tdbg">
+                               <a href="/oademo/clientService_clientMessage?ID=12">详细信息</a>
+                               <a href="/oademo/clientService_selectId?Id=12">修改</a>
+                               <a href="/oademo/clientService_deleteClentService?id=12">删除</a>
+                            </td>
+                        </tr>
+                    
+                        <tr>
+                            <td align="center" class="tdbg">&#21016;&#22791;</td>
+                            <td align="center" class="tdbg">22222</td>
+                            <td align="center" class="tdbg">&#37325;&#35201;&#23458;&#25143;</td>
+                            <td align="center" class="tdbg">2012-01-10</td>
+                            <td align="center" class="tdbg">12.0</td>
+                            <td align="center" class="tdbg">
+                               <a href="/oademo/clientService_clientMessage?ID=14">详细信息</a>
+                               <a href="/oademo/clientService_selectId?Id=14">修改</a>
+                               <a href="/oademo/clientService_deleteClentService?id=14">删除</a>
+                            </td>
+                        </tr>
+                    
+                    <tr height="40">           
+                    	<td colspan="4" align="center"><STRONG>操作：</STRONG>  &nbsp;&nbsp;&nbsp;&nbsp; 共有2条记录,每页10条记录&nbsp;&nbsp;<b>[1]</b></td>       
+                    	<td colspan="2" align="center" class="tdbg"><input type="button" value="添加客户服务" class="newButton" onclick="javascript:location='kehufuwuadd.html'">     
+                        &nbsp;&nbsp;&nbsp;&nbsp;
+            			</td>
+                    </tr>
+              </table>
+            </form>
+
+
+
+
+        </div>
+    </div>
+    <ul class="main_end">
+        <li class="main_end_left left"></li>
+        <li class="main_end_right right"></li>
+    </ul>
+</div>
+</body>
+</html>

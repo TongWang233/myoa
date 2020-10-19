@@ -1,0 +1,148 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+	<head>
+
+
+		<title>My JSP 'addcompany.jsp' starting page</title>
+
+		<meta http-equiv="pragma" content="no-cache">
+		<meta http-equiv="cache-control" content="no-cache">
+		<meta http-equiv="expires" content="0">
+		<meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
+		<meta http-equiv="description" content="This is my page">
+		<!--
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	-->
+		<link rel="stylesheet"
+			href="../styles/style.css" type="text/css" />
+		<link
+			href="../styles/calendar-win2k-cold-1.css"
+			rel="stylesheet" type="text/css" title="win2k-cold-1" />
+		<script type="text/javascript"
+			src="../js/public.js"></script>
+		<script type="text/javascript"
+			src="../js/calendar.js"></script>
+		<script type="text/javascript"
+			src="../js/calendar-zh.js"></script>
+		<script type="text/javascript"
+			src="../js/calendar-setup.js"></script>
+		<script text/javascript">
+	
+</script>
+	</head>
+
+	<body>
+		<form name="form1" method="post" action="company_saveOrUpdate">
+			<input type="hidden" name="bz" value="">
+			<div id="main_body">
+				<!-- **************************************************************-->
+				<ul class="main_top">
+					<li class="main_top_left left">
+						添加公司
+					</li>
+					<li class="main_top_right right"></li>
+				</ul>
+				<div class="main_content_rightbg">
+					<div class="main_content_leftbg">
+						<input type="hidden" name="company.companyId"
+							value="">
+						<table width="98%" border="0" align=center cellpadding="2"
+							cellspacing="1" bgcolor="#FFFFFF" class="border">
+							<tr>
+								<td width="20%" align="left" class="tdbg">
+									<strong>公司名称</strong>
+								</td>
+								<td width="80%" align="left" class="tdbg">
+									<INPUT type="text" id="companyName" name="company.companyName"
+										value="">
+									<strong class="red" style="font-size: 16px">*</strong>
+								</td>
+							</tr>
+
+							<tr>
+								<td width="20%" align="left" class="tdbg">
+									<strong>公司电话</strong>
+								</td>
+								<td width="80%" align="left" class="tdbg">
+									<INPUT id="companyPhone" name="company.companyPhone"
+										value="">
+							</tr>
+
+
+							<tr>
+								<td width="20%" align="left" class="tdbg">
+									<strong>公司传真</strong>
+								</td>
+								<td width="80%" align="left" class="tdbg">
+									<INPUT id="companyFax" name="company.companyFax"
+										value="">
+								</td>
+							</tr>
+							<tr>
+								<td width="20%" align="left" class="tdbg">
+									<strong>邮编</strong>
+								</td>
+								<td width="80%" align="left" class="tdbg">
+
+									<input id="companyPostNumber" name="company.companyPostNumber"
+										value=" ">
+
+									<strong class="red" style="font-size: 16px">*</strong>
+								</td>
+							</tr>
+							<tr>
+								<td width="20%" align="left" class="tdbg">
+									<strong>网站</strong>
+								</td>
+								<td width="80%" align="left" class="tdbg">
+									<INPUT id="companyWeb" name="company.companyWeb"
+										value="">
+									<strong class="red" style="font-size: 16px">*</strong>
+								</td>
+							</tr>
+
+							<tr>
+								<td width="20%" align="left" class="tdbg">
+									<strong>开户行</strong>
+								</td>
+								<td width="80%" align="left" class="tdbg">
+									<INPUT id="companyBank" name="company.companyBank"
+										value="">
+									<strong class="red" style="font-size: 16px">*</strong>
+								</td>
+							</tr>
+							<tr>
+								<td width="20%" align="left" class="tdbg">
+									<strong>开户行号</strong>
+								</td>
+								<td width="80%" align="left" class="tdbg">
+									<INPUT id="companyBankNumber" name="company.companyBankNumber"
+										value="">
+									<strong class="red" style="font-size: 16px">*</strong>
+								</td>
+							</tr>
+							<tr>
+								<td align="left" class="tdbg">
+									&nbsp;
+								</td>
+								<td align="left" class="tdbg">
+
+									<INPUT id="Button1" type="submit" value="确定" name="Button">
+									&nbsp;&nbsp;
+									<INPUT id="Button2" type="button" value="取消" name="Button2"
+										class="newButton"
+										onClick="window.history.go(-1)">
+								</td>
+							</tr>
+						</table>
+
+					</div>
+				</div>
+				<ul class="main_end">
+					<li class="main_end_left left"></li>
+					<li class="main_end_right right"></li>
+				</ul>
+			</div>
+		</form>
+	</body>
+</html>

@@ -1,0 +1,63 @@
+  td, div  { font: normal 12px 宋体; }
+  a  { color: #000000; text-decoration: none; }
+  a:hover  { color: blue;}
+  
+  
+  
+.button {
+	BORDER-RIGHT: #000000 1px solid; BORDER-TOP: #000000 1px solid; FONT-SIZE: 12px; BORDER-LEFT: #000000 1px solid; CURSOR: hand; COLOR: #000000; BORDER-BOTTOM: #000000 1px solid; FONT-FAMILY: Courier New, Courier; BACKGROUND-COLOR: #d2e8ff
+}
+.table1 {
+	FONT-SIZE: 12px; FONT-FAMILY: Courier New, Courier; BACKGROUND-COLOR: white
+}
+.td_out {
+	BORDER-RIGHT: #ffffff 1px solid; BORDER-TOP: #ffffff 1px solid; FONT-SIZE: 12px; BORDER-LEFT: #ffffff 1px solid; COLOR: #000000; BORDER-BOTTOM: #ffffff 1px solid; FONT-FAMILY: Courier New, Courier; HEIGHT: 15px
+}
+.td_over {
+	BORDER-RIGHT: #000000 1px solid; BORDER-TOP: #000000 1px solid; FONT-SIZE: 12px; BORDER-LEFT: #000000 1px solid; CURSOR: default; COLOR: #ffffff; BORDER-BOTTOM: #000000 1px solid; FONT-FAMILY: Courier New, Courier; HEIGHT: 15px; BACKGROUND-COLOR: #3366cc
+}
+.slv {
+	BORDER-TOP-WIDTH: 1px; BORDER-RIGHT: #000000 1px solid; BORDER-LEFT-WIDTH: 1px; FONT-SIZE: 12px; BORDER-BOTTOM-WIDTH: 1px solid; VERTICAL-ALIGN: middle; COLOR: #000000; FONT-FAMILY: Courier New, Courier; HEIGHT: 18px
+}
+.down {
+	BORDER-RIGHT: #9fa3ce 1px solid; BORDER-TOP: #9fa3ce 1px solid; FONT-WEIGHT: bold; FONT-SIZE: 11px; LEFT: -1px; VERTICAL-ALIGN: middle; BORDER-LEFT: #9fa3ce 1px solid; WIDTH: 16px; COLOR: #2050b0; BORDER-BOTTOM: #9fa3ce 1px solid; POSITION: relative; WRITING-MODE: tb-rl; HEIGHT: 16px; BACKGROUND-COLOR: #d0dff7
+}
+.seldiv {
+	BORDER-RIGHT: #000000 1px solid; SCROLLBAR-FACE-COLOR: #d0dff7; Z-INDEX: 1000; OVERFLOW-X: hidden; SCROLLBAR-HIGHLIGHT-COLOR: #d0dff7; BORDER-LEFT: #000000 1px solid; SCROLLBAR-SHADOW-COLOR: #ffffff; SCROLLBAR-3DLIGHT-COLOR: #ffffff; SCROLLBAR-ARROW-COLOR: #ffffff; SCROLLBAR-TRACK-COLOR: #ffffff; BORDER-BOTTOM: #000000 1px solid; SCROLLBAR-DARKSHADOW-COLOR: #d0dff7; POSITION: absolute
+}
+.selfButton{
+         border-left-style: solid; border-left-color:#88b7e3;border-left-width: 1; border-right-style: solid; border-right-color:#88b7e3; border-right-width: 1; border-top-style: solid;  border-top-color:#88b7e3;border-top-width: 1; border-bottom-style: solid;  border-bottom-color:#88b7e3;border-bottom-width: 1;BACKGROUND-COLOR: cdddf4
+}
+.selfButtonOne{
+         border-left-style: solid; border-left-color:#88b7e3;border-left-width: 1; border-right-style: solid; border-right-color:#88b7e3; border-right-width: 1; border-top-style: solid;  border-top-color:#88b7e3;border-top-width: 1; border-bottom-style: solid;  border-bottom-color:#88b7e3;border-bottom-width: 1;width:175
+}
+.selfButtonOneShort{
+         border-left-style: solid; border-left-color:#88b7e3;border-left-width: 1; border-right-style: solid; border-right-color:#88b7e3; border-right-width: 1; border-top-style: solid;  border-top-color:#88b7e3;border-top-width: 1; border-bottom-style: solid;  border-bottom-color:#88b7e3;border-bottom-width: 1;width:157
+}
+.selfButton1{
+         border-left-style: solid; border-left-color:#88b7e3;border-left-width: 1; border-right-style: solid; border-right-color:#88b7e3; border-right-width: 1; border-top-style: solid;  border-top-color:#88b7e3;border-top-width: 1; border-bottom-style: solid;  border-bottom-color:#88b7e3;border-bottom-width: 1;width:50
+}
+.selfButtonAll{
+         border-left-style: solid; border-left-color:#88b7e3;border-left-width: 1; border-right-style: solid; border-right-color:#88b7e3; border-right-width: 1; border-top-style: solid;  border-top-color:#88b7e3;border-top-width: 1; border-bottom-style: solid;  border-bottom-color:#88b7e3;border-bottom-width: 1;width:250
+}
+
+.ta1 TD {
+	COLOR: #0d4eb5; LINE-HEIGHT: 17px
+}
+.newButton{
+         border-left-style: solid; border-left-color:cdddf4;border-left-width: 1; border-right-style: solid; border-right-color:cdddf4; border-right-width: 1; border-top-style: solid;  border-top-color:cdddf4;border-top-width: 0; border-bottom-style: solid;  border-bottom-color:cdddf4;border-bottom-width:1;BACKGROUND-COLOR: cdddf4;BACKGROUND:URL("../images/button.gif")
+}
+
+/* 列表组件翻页条 */
+
+/* 可变的记录数据，包括共多少条记录，当前页数/总页数 */
+table.datapilot .transformableNumber {
+	color: red;	
+}
+
+/* 上下翻页 */
+table.datapilot .clickable {
+	color: red;
+	cursor: hand;
+}
+

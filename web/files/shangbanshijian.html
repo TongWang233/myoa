@@ -1,0 +1,164 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=gb2312"/>
+    <title>登记时间列表</title>
+    <link rel="stylesheet" href="../styles/style.css" type="text/css"/>
+    <script type="text/javascript" src="../js/public.js"></script>
+    <script type="text/javascript" src="../js/calendar.js"></script>
+	 <script type="text/javascript" src="../js/calendar-zh.js"></script>
+	 <script type="text/javascript" src="../js/calendar-setup.js"></script>
+    
+    <script type="text/javascript">
+        function frmSub(frm, objectname)
+        {
+            var value = $GetFromAllElement(frm, objectname);
+            if (value.length == 0)
+            {
+                //alert("testing....");
+                alert("请选择记录再操作！");
+                return false;
+            }
+             return $MC('你确定删除吗?');
+            return true;
+        }
+    </script></head>
+<body>
+<div id="main_body">
+	<!-- ----------用户结构start -------------------------->
+	<ul class="main_top">
+        <li class="main_top_left left">登记时间查询<BR>
+        </li>
+        <li class="main_top_right right"></li>
+    </ul>
+    <form name="form2" method="post"
+                  action="../worktime.do?operate=list">
+    <div class="main_content_rightbg">
+        <div class="main_content_leftbg">
+        	<table width="80%" border="0" align=center cellpadding="2" cellspacing="1"
+                       bgcolor="#FFFFFF"
+                       class="border">
+                 
+                       
+            </table>
+        </div>
+    </div>
+    </form>
+    <ul class="main_end">
+        <li class="main_end_left left"></li>
+        <li class="main_end_right right"></li>
+    </ul>
+    <!-- ----------用户结构end -------------------------->
+    
+    
+    <!--******************************************** -->
+    <ul class="main_top">
+        <li class="main_top_left left">登记时间列表<BR>
+      </li>
+        <li class="main_top_right right"></li>
+    </ul>
+    <div class="main_content_rightbg">
+        <div class="main_content_leftbg">
+
+            <form name="form1" method="post"
+                  action="../workTime_deleteAll">
+                <table width="80%" border="0" align=center cellpadding="2" cellspacing="1"
+                       bgcolor="#FFFFFF"
+                       class="border">
+                    <tr>
+                        <td width="5%" align="center" nowrap class="tdbg">
+                            <strong>选择</strong></td>
+                        <td align="center" class="tdbg"><strong>星期</strong>                        </td>
+                        
+                        <td align="center" class="tdbg">
+                            <div align="center"><strong>当天登记序号</strong></div>
+                        </td>
+                        <td align="center" class="tdbg">
+                            <div align="center"><strong>登记类型</strong></div>
+                        </td>
+						<td align="center" class="tdbg">
+                            <div align="center"><strong>规定时间</strong></div>
+                        </td>
+                        <td align="center" class="tdbg">
+                            <div align="center"><strong>开始时间</strong></div>
+                        </td>
+                        <td align="center" class="tdbg">
+                            <div align="center"><strong>结束时间</strong></div>
+                        </td>
+                        
+                        <td width="10%" align="center" nowrap class="tdbg">
+                            <strong>操作</strong></td>
+
+                    </tr>
+                    
+
+								<tr>
+									<td align="center" class="tdbg">
+										<input type="checkbox" name="wtId"
+											value="1">
+									</td>
+											<td align="center" class="tdbg">
+										1
+
+									</td>
+									<td align="center" class="tdbg">
+										1
+
+									</td>
+									<td align="center" class="tdbg">
+										1
+
+									</td>
+									<td align="center" class="tdbg">
+										1
+									</td>
+									<td align="center" class="tdbg">
+										1
+									</td>
+									<td align="center" class="tdbg">
+										1
+									</td>
+									
+									 <td align="center" class="tdbg">
+                                    <A
+                                    href="../worktime.do?operate=getById&id=">修改</A>
+
+                                    <a href="../workTime_deleteWageFlow?id=1" onClick="return $MC('你确定删除吗?');">删除</a>
+                            </td>
+								</tr>
+							
+                             
+                </table>
+                <table width="80%" border="0" align=center cellpadding="0" cellspacing="0"
+                       bgcolor="#FFFFFF">
+                    <tr>
+                      <td width="10%" align="left" class="tdbg">
+                      <INPUT id="chkAll" type="checkbox" value="checkbox"
+										name="chkAll" onclick="$CHKBoxALL(document.form1,this,'');" />
+                          全选
+                       
+                        <td width="90%" align="left" class="tdbg"><STRONG>操作：</STRONG>
+                                                 <INPUT type="submit" value="删除选定" name="Submit"
+										onClick="return frmSub(document.form1, 'wtId')"
+										class="newButton">
+                        	&nbsp;&nbsp;&nbsp;&nbsp;<INPUT type="button" value="添&nbsp;&nbsp;&nbsp;&nbsp;加" name="addButton" onClick="javascript:window.location.href='shangbanshijianadd.html'" class="newButton">
+                         </td>
+                         
+                    </tr>
+                </table>
+            </form>
+            <table width="80%" border="0" align=center cellpadding="2" cellspacing="0"
+                   bgcolor="#FFFFFF" class="border">
+                <tr>
+                    <td height="40" align="center" class="tdbg"></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <ul class="main_end">
+        <li class="main_end_left left"></li>
+        <li class="main_end_right right"></li>
+    </ul>
+</div>
+</body>
+</html>

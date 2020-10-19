@@ -1,0 +1,269 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+
+	<head>
+		
+		<meta http-equiv="pragma" content="no-cache" />
+		<meta http-equiv="cache-control" content="no-cache" />
+		<meta http-equiv="expires" content="0" />
+		<meta http-equiv="keywords" content="keyword1,keyword2,keyword3" />
+		<meta http-equiv="description" content="This is my page">
+		<title>部门列表</title>
+		<link rel="stylesheet" href="../styles/style.css" type="text/css" />
+
+		<!--
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	-->
+
+	</head>
+
+	<body>
+		<div id="main_body">
+			<!-- ----------用户结构start -------------------------->
+			<ul class="main_top">
+				<li class="main_top_left left">
+					部门查询
+					<BR>
+				</li>
+				<li class="main_top_right right"></li>
+			</ul>
+			<form name="form2" method="post" action="../department_likeList">
+				<div class="main_content_rightbg">
+					<div class="main_content_leftbg">
+						<table width="80%" border="0" align=center cellpadding="2"
+							cellspacing="1" bgcolor="#FFFFFF" class="border">
+							<tr>
+								<td width="10%" align="right" nowrap class="tdbg">
+									<strong>部门名称：</strong>
+								</td>
+								<td colspan="3" width="30%" align="left" nowrap class="tdbg">
+									<input type="text" name="department.departmentName">
+								</td>
+								<td width="20%" align="left" nowrap class="tdbg">
+									<input type="submit" value="查  询" class="newButton">
+								</td>
+							</tr>
+
+						</table>
+					</div>
+				</div>
+			</form>
+			<ul class="main_end">
+				<li class="main_end_left left"></li>
+				<li class="main_end_right right"></li>
+			</ul>
+			<!-- ----------用户结构end -------------------------->
+
+
+			<!--******************************************** -->
+			<ul class="main_top">
+				<li class="main_top_left left">
+					部门列表
+					<BR>
+				</li>
+				<li class="main_top_right right"></li>
+			</ul>
+			<div class="main_content_rightbg">
+				<div class="main_content_leftbg">
+					<form name="form1" method="post" action="../department_delAll">
+						<table width="80%" border="0" align=center cellpadding="2"
+							cellspacing="1" bgcolor="#FFFFFF" class="border">
+							<tr>
+								<td width="5%" align="center" nowrap class="tdbg">
+									<strong>选择</strong>
+								</td>
+								<td align="center" class="tdbg">
+									<strong>部门名称</strong>
+								</td>
+								<td align="center" class="tdbg">
+									<div align="center">
+										<strong>部门电话</strong>
+									</div>
+								</td>
+								<td align="center" class="tdbg">
+									<div align="center">
+										<strong>部门传真</strong>
+									</div>
+								</td>
+								<td align="center" class="tdbg">
+									<div align="center">
+										<strong>所属部门(上级部门)</strong>
+									</div>
+								</td>
+								<td align="center" class="tdbg">
+									<div align="center">
+										<strong>部门职能</strong>
+									</div>
+								</td>
+								<td align="center" class="tdbg">
+									<div align="center">
+										<strong>部门编号</strong>
+									</div>
+								</td>
+								<td width="15%" align="center" nowrap class="tdbg">
+									<strong>操作</strong>
+								</td>
+
+							</tr>
+
+							<tr>
+								<td align="center" class="tdbg">
+									<input type="checkbox" name="departmentID" value="1">
+								</td>
+								<td align="center" class="tdbg">
+									&#23398;&#20064;&#37096;
+								</td>
+								<td align="center" class="tdbg">
+									111
+								</td>
+								<td align="center" class="tdbg">
+									111
+								</td>
+								<td align="center" class="tdbg">
+									&#26080;
+								</td>
+								<td align="center" class="tdbg">
+									777771
+								</td>
+								<td align="center" class="tdbg">
+									01
+								</td>
+								<td align="center" class="tdbg">
+									<a href="department_edit?id=1">修改</a> &nbsp;&nbsp;&nbsp;
+									<a href="#">删除</a>
+								</td>
+							</tr>
+
+							<tr>
+								<td align="center" class="tdbg">
+									<input type="checkbox" name="departmentID" value="2">
+								</td>
+								<td align="center" class="tdbg">
+									&#22522;&#30784;&#37096;
+								</td>
+								<td align="center" class="tdbg">
+									123
+								</td>
+								<td align="center" class="tdbg">
+									321
+								</td>
+								<td align="center" class="tdbg">
+									&#23398;&#20064;&#37096;
+								</td>
+								<td align="center" class="tdbg">
+									123
+								</td>
+								<td align="center" class="tdbg">
+									0101
+								</td>
+								<td align="center" class="tdbg">
+									<a href="department_edit?id=2">修改</a> &nbsp;&nbsp;&nbsp;
+									<a href="#">删除</a>
+								</td>
+							</tr>
+
+							<tr>
+								<td align="center" class="tdbg">
+									<input type="checkbox" name="departmentID" value="3">
+								</td>
+								<td align="center" class="tdbg">
+									&#26434;&#37096;
+								</td>
+								<td align="center" class="tdbg">
+									11
+								</td>
+								<td align="center" class="tdbg">
+									11
+								</td>
+								<td align="center" class="tdbg">
+									&#23398;&#20064;&#37096;
+								</td>
+								<td align="center" class="tdbg">
+									11124
+								</td>
+								<td align="center" class="tdbg">
+									0102
+								</td>
+								<td align="center" class="tdbg">
+									<a href="department_edit?id=3">修改</a> &nbsp;&nbsp;&nbsp;
+									<a href="#">删除</a>
+								</td>
+							</tr>
+
+							<tr>
+								<td align="center" class="tdbg">
+									<input type="checkbox" name="departmentID" value="20">
+								</td>
+								<td align="center" class="tdbg">
+									12
+								</td>
+								<td align="center" class="tdbg">
+									11
+								</td>
+								<td align="center" class="tdbg">
+									12
+								</td>
+								<td align="center" class="tdbg">
+									&#23398;&#20064;&#37096;
+								</td>
+								<td align="center" class="tdbg">
+									12
+								</td>
+								<td align="center" class="tdbg">
+									0103
+								</td>
+								<td align="center" class="tdbg">
+									<a href="department_edit?id=20">修改</a> &nbsp;&nbsp;&nbsp;
+									<a href="#">删除</a>
+								</td>
+							</tr>
+
+
+
+
+
+						</table>
+						<table width="80%" border="0" align=center cellpadding="0"
+							cellspacing="0" bgcolor="#FFFFFF">
+							<tr>
+								<td width="10%" align="left" class="tdbg">
+									<input id="chkAll" type="checkbox" value="checkbox"
+										name="chkAll" >
+									全选
+								</td>
+								<td width="70%" align="left" class="tdbg">
+									<STRONG>操作：</STRONG>
+									<input type="submit" value="删除选定" name="Submit"
+										class="newButton"
+										>
+									&nbsp;&nbsp;&nbsp;&nbsp;
+									<input type="button" value="添&nbsp;&nbsp;&nbsp;&nbsp;加"
+										name="addButton"
+										onclick="window.location.href='bumenadd.html'"
+										class="newButton">
+									
+								</td>
+							</tr>
+						</table>
+					</form>
+					<table width="80%" border="0" align=center cellpadding="2"
+						cellspacing="0" bgcolor="#FFFFFF" class="border">
+						<tr>
+							<td height="40" align="center" class="tdbg">
+								共有4条记录,每页10条记录&nbsp;&nbsp;
+								<b>[1]</b>
+							</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+			<ul class="main_end">
+				<li class="main_end_left left"></li>
+				<li class="main_end_right right">
+					&quot;
+				</li>
+			</ul>
+		</div>
+		<br>
+	</body>
+</html>
